@@ -86,7 +86,7 @@ footer.footer-band{
 
 footer .footer-nav{
   background-color: #164084;
-  min-height:  112px;
+  min-height:  30px;
 }
 
 footer .footer-nav ul{
@@ -100,14 +100,13 @@ footer .footer-nav li{
   list-style: none;
   float : left;
   vertical-align: middle;
-  padding-top: 20px;
   margin-left: 27px;
 }
 
 .footer-nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 21px 15px;
+  padding: 10px 0px 0px 0px;
   float: left;
 }
 
@@ -126,13 +125,30 @@ footer .footer-recent{
   overflow: hidden;
 }
 
+li.copyright{
+  float: right !important;
+  padding: 10px 60px 0px 0px;
+  color: white;
+}
+
+li.copyright-design{
+  color: black;
+  font-size: 10px;
+  float: right !important;
+  padding-right: 100px;
+}
+
 table {
   max-width: 960px;
   width: 100%;
 }
 
 th {
+  text-align: left;
   color: #C71C28;
+  border-bottom: 3px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
