@@ -41,7 +41,7 @@ body {
 }
 
 .nav ul li input {
-	margin: 21px 15px;
+	margin: 21px 0px;
 	float: left;
 }
 
@@ -102,6 +102,13 @@ footer .footer-nav li{
   vertical-align: middle;
   padding-top: 20px;
   margin-left: 27px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 21px 15px;
+  float: left;
 }
 
 footer .footer-ur{
