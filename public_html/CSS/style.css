@@ -41,7 +41,7 @@ body {
 }
 
 .nav ul li input {
-	margin: 21px 15px;
+	margin: 21px 0px;
 	float: left;
 }
 
@@ -75,6 +75,80 @@ body {
 	width: 545px;
 	overflow: hidden;
 	margin: 0 auto;
+}
+
+footer.footer-band{
+  background-color: #231F20;
+  margin: 0 auto;
+  min-height: 266px;
+  max-width: 960px;
+}
+
+footer .footer-nav{
+  background-color: #164084;
+  min-height:  30px;
+}
+
+footer .footer-nav ul{
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+footer .footer-nav li{
+  display: inline-block;
+  list-style: none;
+  float : left;
+  vertical-align: middle;
+  margin-left: 27px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0px 0px 0px;
+  float: left;
+}
+
+footer .footer-ur{
+  float: left;
+  overflow: hidden;
+}
+
+footer .footer-contact{
+  float: center;
+  overflow: hidden;
+}
+
+footer .footer-recent{
+  float: right;
+  overflow: hidden;
+}
+
+li.copyright{
+  float: right !important;
+  padding: 10px 60px 0px 0px;
+  color: white;
+}
+
+li.copyright-design{
+  color: black;
+  font-size: 10px;
+  float: right !important;
+  padding-right: 100px;
+}
+
+table {
+  max-width: 960px;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  color: #C71C28;
+  border-bottom: 3px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
