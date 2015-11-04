@@ -3,12 +3,6 @@
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-  max-width: 1500 px;
-  height: 20%;
-  background-color: #FFFFFF; }
-
 .header li {
   display: inline-block;
   list-style: none;
