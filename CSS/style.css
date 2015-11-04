@@ -1,3 +1,8 @@
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .header {
   width: 100%;
   max-width: 1500 px;
@@ -12,14 +17,37 @@
 .nav {
   background-color: #C71D29;
   color: white;
-  vertical-align: center;
-  align-content: center; }
+  height: 62px;
+  text-align: center; }
 
-.nav li {
+.header .nav li {
   display: inline-block;
   list-style: none;
-  text-align: center;
-  width: 10%;
-  vertical-align: middle; }
+  float : left;
+  vertical-align: middle;
+  padding-top: 20px;
+  margin-left: 30px;
+  }
+
+  .header .logo {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  .header .follow-us{
+    display: inline-block;
+    padding-right: 48px;
+    padding-top: 48px;
+    float: right;
+
+  }
+
+  .header ul {
+    width: 545px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
 
 /*# sourceMappingURL=style.css.map */
