@@ -26,7 +26,7 @@ body {
 	float : left;
 	vertical-align: middle;
 	padding-top: 20px;
-	margin-left: 30px;
+	margin-left: 27px;
 }
 
 .header .logo {
@@ -47,6 +47,57 @@ body {
 	width: 545px;
 	overflow: hidden;
 	margin: 0 auto;
+}
+
+footer.footer-band{
+  background-color: #231F20;
+  margin: 0 auto;
+  min-height: 266px;
+  max-width: 960px;
+}
+
+footer .footer-nav{
+  background-color: #164084;
+  min-height:  112px;
+}
+
+footer .footer-nav ul{
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+footer .footer-nav li{
+  display: inline-block;
+  list-style: none;
+  float : left;
+  vertical-align: middle;
+  padding-top: 20px;
+  margin-left: 27px;
+}
+
+footer .footer-ur{
+  float: left;
+  overflow: hidden;
+}
+
+footer .footer-contact{
+  float: center;
+  overflow: hidden;
+}
+
+footer .footer-recent{
+  float: right;
+  overflow: hidden;
+}
+
+table {
+  max-width: 960px;
+  width: 100%;
+}
+
+th {
+  color: #C71C28;
 }
 
 /*# sourceMappingURL=style.css.map */
