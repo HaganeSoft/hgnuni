@@ -22,10 +22,12 @@ abstract class AbstractController {
 
 	public function __construct($config = null){
 		$this->config = $config;
-		$this->db = new \Hagane\Database($this->config);
-		$this->auth = new \Hagane\Authentication($this->config, $this->db);
 
-		$this->user = new \Hagane\Model\User($this->auth, $this->db);
+		$this->db = new \Hagane\Database($this->config);
+		if ($this->db->isActive()) {
+			$this->auth = new \Hagane\Authentication($this->config, $this->db);
+			$this->user = new \Hagane\Model\User($this->auth, $this->db);
+		}
 
 		$this->print_template = true;
 		$this->sendJson = false;
