@@ -28,8 +28,8 @@ body {
 .subtitulonav {
 	color: #000;
 	font-size: 17px;
-	left: 25px;
-	position: absolute;
+	left: 0px;
+	position: inherit;
 	top: 21px;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .nav ul li input {
-	margin: 21px 0px;
+	margin: 13px 0px;
 	float: left;
 }
 
@@ -71,8 +71,11 @@ body {
 	float: right;
 }
 
+ul{
+	list-style: none;
+}
+
 .header ul {
-	width: 545px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -80,19 +83,19 @@ body {
 footer.footer-band{
 	background-color: #231F20;
 	margin: 0 auto;
-	min-height: 266px;
-	max-width: 960px;
+	height: 266px;
+	width: 960px;
 }
 
 footer .footer-nav{
 	background-color: #164084;
-	min-height:  30px;
+	height:  100%;
 }
 
 footer .footer-nav ul{
 	width: 100%;
 	overflow: hidden;
-	margin: 0 auto;
+	height: 15px;
 }
 
 footer .footer-nav li{
@@ -101,6 +104,7 @@ footer .footer-nav li{
 	float : left;
 	vertical-align: middle;
 	margin-left: 27px;
+	padding: 4px;
 }
 
 .footer-nav ul li a {
@@ -110,25 +114,47 @@ footer .footer-nav li{
 	float: left;
 }
 
+
 footer .footer-ur{
 	float: left;
 	overflow: hidden;
+	color: #C71C28;
+	border-bottom: 3px solid gray;
+	border-collapse: collapse;
 }
 
 footer .footer-contact{
 	float: center;
 	overflow: hidden;
+	color: #C71C28;
+	border-bottom: 3px solid gray;
+	border-collapse: collapse;
 }
 
 footer .footer-recent{
 	float: right;
 	overflow: hidden;
+	color: #C71C28;
+	border-bottom: 3px solid gray;
+	border-collapse: collapse;
+}
+
+footer .footer-map{
+	float: right;
+	overflow: hidden;
+	color: #C71C28;
+	border-bottom: 3px solid gray;
+	border-collapse: collapse;
 }
 
 li.copyright{
 	float: right !important;
 	padding: 10px 60px 0px 0px;
 	color: white;
+}
+
+.copyright p{
+	margin-bottom: 0px;
 }
 
 li.copyright-design{
@@ -139,7 +165,7 @@ li.copyright-design{
 }
 
 table {
-	max-width: 960px;
+	width: 960px;
 	width: 100%;
 }
 
