@@ -85,14 +85,14 @@ body {
 	height: 62px;
 }
 
-#footer ul li a {
+#footer.down ul li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 23px 15px;
 	float: left;
 }
 
-#footer ul li a:hover {
+#footer.down ul li a:hover {
 	color: #000;
 	background-color: #fff;
 }
@@ -109,6 +109,7 @@ body {
 	color: #fff;
 	float: right;
 	clear: both;
+	margin-bottom: 5px;
 	font-size: 16px;
 }
 
@@ -120,6 +121,7 @@ body {
 
 #footer .caja {
 	width: 240px;
+	color: #fff;
 	float: left;
 	min-height: 150px;
 	padding: 10px 5px;
@@ -128,9 +130,22 @@ body {
 
 #footer .caja .subtitulo{
 	color: #C71D29;
+	float: left;
+	width: 100%;
 	font-size: 23px;
+	margin-bottom: 25px;
 }
 
+#footer .caja ul{
+	float: left;
+	margin-left: 15px;
+	list-style: disc;
+	color: #C71D29;
+}
+
+#footer .caja ul li span{
+	color: #fff;
+}
 
 table {
 	max-width: 960px;
