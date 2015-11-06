@@ -23,7 +23,7 @@ class Router {
 		} else {
 			$request = substr($request, 1);
 		}
-		if ($tmp = $this->match($request)) {
+		if ($tmp = $this->match((string)$request)) {
 			$request = $tmp;
 		}
 		$request = explode("/", $request);
