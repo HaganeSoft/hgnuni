@@ -55,13 +55,6 @@ body {
 	background-color: #fff;
 }
 
-#header #nav li {
-	display: inline-block;
-	list-style: none;
-	float : left;
-	vertical-align: middle;
-}
-
 #header .logo {
 	display: inline-block;
 	padding-top: 10px;
@@ -81,70 +74,34 @@ body {
 	margin: 0 auto;
 }
 
-footer.footer-band{
+#footer.up {
 	background-color: #231F20;
-	margin: 0 auto;
-	max-width: 960px;
 }
 
-footer .footer-nav{
+#footer.down {
 	background-color: #164084;
-	min-height:  30px;
+	height: 62px;
 }
 
-footer .footer-nav ul{
-	width: 100%;
-	overflow: hidden;
-	margin: 0 auto;
-}
-
-footer .footer-nav li{
-	display: inline-block;
-	list-style: none;
-	float : left;
-	vertical-align: middle;
-	margin-left: 27px;
-}
-
-.footer-nav a {
+#footer ul li a {
 	color: #fff;
 	text-decoration: none;
-	padding: 10px 0px 0px 0px;
+	padding: 23px 15px;
 	float: left;
-	margin-left: 40px;
 }
 
-footer .footer-ur{
-	float: left;
-	overflow: hidden;
-	color: #C71D29;
+#footer ul li a:hover {
+	color: #000;
+	background-color: #fff;
 }
 
-footer .footer-contact{
-	float: center;
-	overflow: hidden;
-	color: #C71D29;
-}
-
-footer .footer-recent{
-	float: right;
-	overflow: hidden;
-	color: #C71D29;
-}
-
-footer .footer-map{
-	color: #C71D29;
-	float: right;
-	overflow: hidden;
-}
-
-li.copyright{
+li.copyright {
 	float: right !important;
 	padding: 10px 60px 0px 0px;
 	color: white;
 }
 
-li.copyright-design{
+li.copyright-design {
 	color: black;
 	font-size: 10px;
 	float: right !important;
