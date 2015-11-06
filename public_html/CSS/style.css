@@ -1,5 +1,6 @@
 body {
 	font-family: 'Arial';
+	font-size: 16px;
 }
 
 .content, #header{
@@ -76,6 +77,7 @@ body {
 
 #footer.up {
 	background-color: #231F20;
+	overflow: hidden;
 }
 
 #footer.down {
@@ -95,18 +97,40 @@ body {
 	background-color: #fff;
 }
 
-li.copyright {
-	float: right !important;
-	padding: 10px 60px 0px 0px;
-	color: white;
+.copyright {
+	float: right;
+	font-size: 10px;
+	padding-left: 35px;
+	text-align: right;
+	padding-top: 18px;
 }
 
-li.copyright-design {
-	color: black;
-	font-size: 10px;
-	float: right !important;
-	padding-right: 100px;
+.copyright .copy{
+	color: #fff;
+	float: right;
+	clear: both;
+	font-size: 16px;
 }
+
+.copyright .design{
+	color: #000;
+	float: right;
+	clear: both;
+}
+
+#footer .caja {
+	width: 240px;
+	float: left;
+	min-height: 150px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+}
+
+#footer .caja .subtitulo{
+	color: #C71D29;
+	font-size: 23px;
+}
+
 
 table {
 	max-width: 960px;
