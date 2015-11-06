@@ -2,25 +2,30 @@ body {
 	font-family: 'Arial';
 }
 
-#container{
-	max-width: 960px;
+.content, #header{
+	width: 960px;
 	margin: 0 auto;
 }
 
-#content{
+.relative {
+	position: relative;
+}
+
+#viewcontent.content {
 	padding: 5px;
 }
 
-.header li {
+#header li {
 	display: inline-block;
 	list-style: none;
 	vertical-align: middle;
 }
 
-.nav {
+#nav {
 	background-color: #C71D29;
-	color: white;
+	color: #000;
 	height: 62px;
+	width: 100%;
 	text-align: center;
 	position: relative;
 }
@@ -28,52 +33,51 @@ body {
 .subtitulonav {
 	color: #000;
 	font-size: 17px;
-	left: 25px;
-	position: relative;
+	left: 5px;
+	position: absolute;
 	top: 21px;
 }
 
-.nav ul li a {
+#nav ul li a {
 	color: #fff;
 	text-decoration: none;
-	padding: 21px 15px;
+	padding: 23px 15px;
 	float: left;
 }
 
-.nav ul li input {
-	margin: 13px 0px;
+#nav ul li input {
+	margin: 20px 15px;
 	float: left;
 }
 
-.nav ul li a:hover {
+#nav ul li a:hover {
 	color: #000;
 	background-color: #fff;
 }
 
-.header .nav li {
+#header #nav li {
 	display: inline-block;
 	list-style: none;
 	float : left;
 	vertical-align: middle;
 }
 
-.header .logo {
+#header .logo {
 	display: inline-block;
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-bottom: 10px;
 }
 
-.header .follow-us{
+#header .follow-us{
 	display: inline-block;
 	padding-right: 48px;
 	padding-top: 48px;
 	float: right;
 }
 
-.header ul {
+#nav ul {
 	width: 545px;
-	overflow: hidden;
 	margin: 0 auto;
 }
 
