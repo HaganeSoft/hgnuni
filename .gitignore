@@ -1,0 +1,6 @@
+.DS_Store
+app/config/config.php
+/.htaccess
+error_log
+/sql
+node_modules
