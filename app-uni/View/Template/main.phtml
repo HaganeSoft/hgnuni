@@ -38,8 +38,13 @@
 					<a href="#" class="webicon linkedin">LinkedIn</a>
 				</div>
 				<div class="greeting">
+					<?php if ($this->auth->isAuth()) : ?>
 					<span class="welcome">welcome</span>
 					<span class="user"><?= $this->user->getUsername(); ?></span>
+					<a href="logout" style="font-size: 8px">(logout)</a>
+					<?php else: ?>
+					<a href="login">login</a>
+				<?php endif; ?>
 				</div>
 			</div>
 		</div>

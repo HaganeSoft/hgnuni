@@ -4,12 +4,17 @@ ya etsas logueado tututruur shhhoohh
 <?php else: ?>
 <div class="container">
 	<div class="row">
-		<div class="card col-50 off-25" style="margin: 0 auto;">
-			<form action="User/auth" method="post">
-				<input name="user" type="text" placeholder="User" ng-required="true">
-				<input name="password" type="password" placeholder="Password" ng-required="true">
-				<button type="submit">Entrar</button>
-			</form>
+		<div class="card col-33 off-33">
+			<div class="card-head">
+				Login
+			</div>
+			<div class="card-body">
+				<form action="User/auth" method="post" novalidate>
+					<input name="user" type="text" placeholder="User" ng-required="true">
+					<input name="password" type="password" placeholder="Password" ng-required="true">
+					<button type="submit">Entrar</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
