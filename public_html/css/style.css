@@ -85,7 +85,7 @@ th {
 
 .main-view {
 	color: #5d5d5d;
-	font-size: 1.4rem;
+	font-size: 1em;
 }
 
 .card {
@@ -112,7 +112,7 @@ th {
 /*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	width: 100%;
 	min-width: 920px;
 }
@@ -155,7 +155,7 @@ body {
 .nav .subtitulonav {
 	display: inline-block;
 	color: #7b060e;
-	font-size: 17px;
+	font-size: 1.1em;
 	padding-right: 10px;
 }
 
@@ -173,6 +173,7 @@ body {
 .nav ul li a {
 	text-decoration: none;
 	color: inherit;
+	font-size: 1em;
 }
 
 .nav ul li:hover {
@@ -238,7 +239,7 @@ body {
 
 .footer .caja .subtitulo{
 	color: #7b060e;
-	font-size: 18px;
+	font-size: 1.1em;
 	font-weight: bold;
 	font-family: 'Roboto Slab', serif;
 }
@@ -304,7 +305,7 @@ body {
 .footer.down ul li a {
 	color: #fff;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 0.8em;
 }
 
 .copyright {
@@ -318,13 +319,13 @@ body {
 .copyright .copy{
 	color: #fff;
 	clear: both;
-	font-size: 10px;
+	font-size: 0.6em;
 	padding: 1px 0;
 	display: block;
 }
 
 .copyright .design{
-	font-size: 7px;
+	font-size: 0.4em;
 	text-align: center;
 	color: #000;
 	clear: both;
@@ -346,7 +347,7 @@ th {
 }
 
 .title {
-	font-size: 40px;
+	font-size: 2em;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 2px solid;
@@ -503,5 +504,5 @@ th {
 }
 
 .row p {
-	line-height: 1.7rem;
+	line-height: 1.5em;
 }
