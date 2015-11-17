@@ -1,0 +1,6 @@
+.DS_Store
+*/config/config.php
+/.htaccess
+error_log
+/sql
+node_modules

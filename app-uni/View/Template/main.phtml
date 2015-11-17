@@ -4,11 +4,18 @@
 	<base href="<?= $this->config['document_root']; ?>">
 	<meta charset="utf-8">
 	<title>UANL</title>
+
+	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
+
+	<!-- JAVASCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
@@ -17,60 +24,51 @@
 	<script type="text/javascript" src="js/angular/mainController.js"></script>
 </head>
 <body>
-	<div id="header">
-		<div class="row">
-			<div class="logo">
-				<a href="#"><img src="img/menu/logo.svg"></a>
-			</div>
+	<div class="header">
+		<div class="content">
+			<a href="#"><img src="img/menu/logo.svg"></a>
 			<div class="follow-us">
 				Follow us
 			</div>
 		</div>
 	</div>
-	<div id="nav">
-		<div class="content relative">
-			<span class="subtitulonav">HEAT TREATMENT NET-</span>
+	<div class="nav">
+		<div class="content">
+			<span class="subtitulonav">HEAT TREATMENT NETWORK</span>
 			<ul>
 				<li><a href="#">Signup</a></li>
 				<li><a href="#">Downloads</a></li>
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Contact</a></li>
-				<li><input id="searchbar" type="search" placeholder="Search"></li>
 			</ul>
+			<input id="searchbar" type="search" placeholder="Search">
 		</div>
 	</div>
-
-	<div id="viewcontent" class="content">
-		<slick dots=true>
-			<div><img src="img/contenido/imagen1.gif"></div>
-			<div><img src="img/contenido/imagen2.gif"></div>
-			<div><img src="img/contenido/imagen3.gif"></div>
-		</slick>
+	<div class="main-view">
+		<?= $this->view; ?>
 	</div>
-
-	<div id="footer" class="up">
+	<div class="footer up">
 		<div class="content">
 			<div class="caja">
 				<span class="subtitulo">Useful Resources</span>
-				<ul>
-					<li><span>Link</span></li>
-					<li><span>Link</span></li>
-					<li><span>Link</span></li>
-					<li><span>Link</span></li>
-				</ul>
+				<div class="caja-content">
+					<ul>
+						<li>link no.1</li>
+						<li>link no.1</li>
+						<li>link no.1</li>
+						<li>link no.1</li>
+					</ul>
+				</div>
 			</div>
 			<div class="caja">
 				<span class="subtitulo">Contact</span>
-			</div>
-			<div class="caja">
-				<p>mapa</p>
 			</div>
 			<div class="caja">
 				<span class="subtitulo">Recent Articles</span>
 			</div>
 		</div>
 	</div>
-	<div id="footer" class="down">
+	<div class="footer down">
 		<div class="content">
 			<ul>
 				<li><a href="#">Signup</a></li>
@@ -78,12 +76,9 @@
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-			<div>
-				<div class="copyright">
-					<span class="copy">HTN Copyright</span>
-					<span class="design">Designed by BLACKMAMBA </span>
-				</div>
-				<div class="" style="> </div>
+			<div class="copyright">
+				<span class="copy">HTN Copyright 2015</span>
+				<span class="design">designed by BLACKMAMBA </span>
 			</div>
 		</div>
 	</div>

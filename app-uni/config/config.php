@@ -15,14 +15,13 @@ class Config {
 			array(
 				'appPath' => $this->appDepth.$this->appDir.'/',
 				'template' => 'main',
-				// 'db_engine' => 'mysql',
-				// 'db_server' => 'localhost',
-				// 'db_database' => 'hagane_sisse',
-				// 'db_user' => 'root',
-				// 'db_password' => '',
-				// 'session_time' => 3600,
-				'document_root' => '/'
-				//'document_root' => '/uni/'
+				'db_engine' => 'mysql',
+				'db_server' => 'localhost',
+				'db_database' => 'hgnuni',
+				'db_user' => 'root',
+				'db_password' => 'Guapuras95!',
+				'session_time' => 3600,
+				'document_root' => '/hagane/hgnuni/'
 			);
 	}
 
