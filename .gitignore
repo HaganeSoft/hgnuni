@@ -1,5 +1,5 @@
 .DS_Store
-app/config/config.php
+*/config/config.php
 /.htaccess
 error_log
 /sql
