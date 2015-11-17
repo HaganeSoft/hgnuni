@@ -89,24 +89,24 @@ th {
 }
 
 .card {
-	margin: 20px 0;
+	margin: 1.1em;
 	border: 1px solid;
 	border-color: #FAFAFA;
-	border-radius: 5px;
+	border-radius: 0.3em;
 }
 
 .card-head {
-	padding: 5px;
+	padding: 0.3em;
 	border-bottom: 1px solid;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 0.3em;
+	border-top-right-radius: 0.3em;
 	text-align: center;
 	background-color: #C71D29;
 	color: #fff;
 }
 
 .card-body {
-	padding: 5px;
+	padding: 0.3em;
 }
 
 /*DOCUMENT*/
@@ -129,7 +129,7 @@ body {
 }
 
 .header {
-	height: 170px;
+	height: 12em;
 }
 
 .header li {
@@ -139,24 +139,24 @@ body {
 }
 
 .header img {
-	height: 150px;
+	height: 9.8em;
 }
 
 .nav {
 	text-align: left;
-	height: 30px;
-	line-height: 30px;
+	height: 2em;
+	line-height: 2em;
 	background-color: #C71D29;
 	color: #000;
 	width: 100%;
-	margin-bottom: 50px;
+	margin-bottom: 3.6;
 }
 
 .nav .subtitulonav {
 	display: inline-block;
 	color: #7b060e;
 	font-size: 1.1em;
-	padding-right: 10px;
+	padding-right: 0.7em;
 }
 
 .nav ul {
@@ -166,7 +166,7 @@ body {
 .nav ul li {
 	display: inline-block;
 	list-style-type: none;
-	padding: 0 20px;
+	padding: 0 1.4em;
 	color: #fff;
 }
 
@@ -193,21 +193,21 @@ body {
 	display: inline-block;
 	float: right;
 	color: #5d5d5d;
-	padding-top: 35px;
+	padding-top: 2.5em;
 }
 
 .header .follow-us .social {
-	padding-top: 15px;
+	padding-top: 1em;
 }
 
 .header .follow-us .greeting {
-	padding-top: 50px;
+	padding-top: 2.5em;
 	font-family: 'Roboto Slab', serif;
 }
 
 .header .follow-us .user {
 	color: #164084;
-	padding-left: 5px;
+	padding-left: 0.3em;
 }
 
 /*FOOTER AND COPYRIGHT*/
@@ -218,20 +218,20 @@ body {
 .footer.up {
 	background-color: #231F20;
 	color: #5d5d5d;
-	height: 130px;
+	height: 9.3em;
 	font-family: 'Roboto Slab', serif;
 }
 
 .footer.down {
 	background-color: #164084;
 	text-align: left;
-	height: 40px;
-	line-height: 40px;
+	height: 2.9em;
+	line-height: 2.9em;
 }
 
 .footer .caja {
-	width: 240px;
-	padding: 14px 5px;
+	width: 33%;
+	padding: 1em 0.4em;
 	height: inherit;
 	box-sizing: border-box;
 	display: inline-block;
@@ -245,11 +245,7 @@ body {
 }
 
 .caja-content {
-	margin-top: 20px;
-}
-
-.footer.up .caja {
-	width: 33%;
+	margin-top: 1.4em;
 }
 
 .footer.up ul {
@@ -257,7 +253,7 @@ body {
 }
 
 .footer.up ul li {
-	padding: 2px;
+	padding: 0.1em;
 	font-weight: 300;
 }
 
@@ -283,14 +279,14 @@ body {
 }
 
 .footer.up ul.articles img{
-	width:25px;
-	height: 25px;
+	width: 1.8em;
+	height: 1.8em;
 	display: inline-block;
 }
 
 .footer.up ul.articles p{
 	display: inline-block;
-	padding-left: 10px;
+	padding-left: 0.7em;
 }
 
 .footer.down ul {
@@ -299,7 +295,7 @@ body {
 
 .footer.down ul li {
 	display: inline-block;
-	padding: 0 10px;
+	padding: 0 0.7em;
 }
 
 .footer.down ul li a {
@@ -313,7 +309,7 @@ body {
 	float: right;
 	line-height: normal;
 	vertical-align: middle;
-	padding: 10px 0;
+	padding: 0.7em 0;
 }
 
 .copyright .copy{
@@ -348,10 +344,10 @@ th {
 
 .title {
 	font-size: 2em;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
+	margin-bottom: 0.6em;
+	padding-bottom: 0.6em;
 	border-bottom: 2px solid;
-	margin-left: 40px;
+	margin-left: 1.2em;
 }
 
 /*GRID*/
@@ -384,7 +380,7 @@ th {
 }
 
 .row .col-10 {
-	padding: 0 10px;
+	padding: 0 0.7em;
 	width: 10%;
 }
 
@@ -505,4 +501,10 @@ th {
 
 .row p {
 	line-height: 1.5em;
+}
+
+@media screen and (min-width: 1300px) {
+	body {
+		font-size: 18px;
+	}
 }
