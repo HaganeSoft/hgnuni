@@ -2,7 +2,7 @@
 slick {
 	width: 60%;
 	height: auto;
-	margin: 0 auto;
+	margin: 40px auto 80px !important;
 }
 
 table {
@@ -27,7 +27,6 @@ th {
 
 .main-view {
 	color: #5d5d5d;
-	/*font-size: 20px;*/
 }
 
 /*DOCUMENT*/
@@ -127,7 +126,6 @@ body {
 	color: #164084;
 	padding-left: 5px;
 }
-
 
 /*FOOTER AND COPYRIGHT*/
 .footer {
@@ -275,11 +273,14 @@ th {
 
 .main-view {
 	color: #5d5d5d;
-	font-size: 20px;
+	font-size: 18px;
+}
 
 /*GRID*/
+
 .container {
-	width: 100%
+	width: 100%;
+}
 
 .row {
 	width: 100%;
@@ -287,7 +288,15 @@ th {
 	margin-bottom: 50px;
 }
 
-.row [class*='col-'] {
+/*-- our cleafix hack -- */
+.row:before,
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+[class*='col-'] {
 	float: left;
 }
 
@@ -409,4 +418,8 @@ th {
 
 .row .off-90 {
 	margin-left: 90%;
+}
+
+.row p {
+	line-height: 35px;
 }
