@@ -97,7 +97,7 @@ body {
 slick {
 	width: 60%;
 	height: auto;
-	margin: 0 auto;
+	margin: 40px auto 80px !important;
 }
 
 .footer {
@@ -240,7 +240,7 @@ th {
 	padding: 5px;
 }
 
-.container .header {
+.header {
 	font-size: 40px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
@@ -248,7 +248,7 @@ th {
 	margin-left: 40px;
 }
 
-.container {
+.main-view {
 	color: #5d5d5d;
 	font-size: 20px;		
 }
@@ -259,56 +259,71 @@ th {
 }
 
 .row .col-10 {
+	padding: 0 10px;
 	float: left;
 	width: 10%;
 }
 
 .row .col-20 {
+
 	float: left;
 	width: 20%;
 }
 
 .row .col-30 {
+
 	float: left;
 	width: 30%;
 }
 
 .row .col-30 {
+
 	float: left;
 	width: 30%;
 }
 
 .row .col-40 {
+
 	float: left;
 	width: 40%;
 }
 
 .row .col-50 {
+
 	float: left;
 	width: 50%;
 }
 
 .row .col-60 {
+
 	float: left;
 	width: 60%;
 }
 
 .row .col-70 {
+
 	float: left;
 	width: 70%;
 }
 
 .row .col-80 {
+
 	float: left;
 	width: 80%;
 }
 
 .row .col-90 {
+
 	float: left;
 	width: 90%;
 }
 
 .row .col-100 {
+
 	float: left;
 	width: 100%;
+}
+
+.center-items {
+	text-align: center;
 }

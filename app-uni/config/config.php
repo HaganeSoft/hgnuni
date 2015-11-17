@@ -17,9 +17,9 @@ class Config {
 				'template' => 'main',
 				'db_engine' => 'mysql',
 				'db_server' => 'localhost',
-				'db_database' => 'hgnuni',
-				'db_user' => 'root',
-				'db_password' => 'Guapuras95!',
+				'db_database' => 'hguni',
+				'db_user' => 'hagane_dev',
+				'db_password' => '',
 				'session_time' => 3600,
 				'document_root' => '/hgnuni/public_html/'
 			);
