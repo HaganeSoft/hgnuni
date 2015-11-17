@@ -10,10 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" href="css/webicons.css" media="screen" title="no title" charset="utf-8">
 
 	<!-- FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 
 	<!-- JAVASCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -28,7 +29,18 @@
 		<div class="content">
 			<a href="#"><img src="img/menu/logo.svg"></a>
 			<div class="follow-us">
-				Follow us
+				<span class="subtitle">Follow US</span>
+				<div class="social svg">
+					<a href="#" class="webicon googleplus">Google+</a>
+					<a href="#" class="webicon twitter">Twitter</a>
+					<a href="#" class="webicon youtube">YouTube</a>
+					<a href="#" class="webicon facebook">Facebook</a>
+					<a href="#" class="webicon linkedin">LinkedIn</a>
+				</div>
+				<div class="greeting">
+					<span class="welcome">welcome</span>
+					<span class="user"><?= $this->user->getUsername(); ?></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -46,7 +58,7 @@
 	</div>
 	<div class="main-view">
 		<?= $this->view; ?>
-	</div>	
+	</div>
 	<div class="footer up">
 		<div class="content">
 			<div class="caja">
@@ -62,9 +74,31 @@
 			</div>
 			<div class="caja">
 				<span class="subtitulo">Contact</span>
+				<div class="caja-content">
+					<table>
+						<tr>
+							<td class="label">address</td><td>lorem ipsum st. MX</td>
+						</tr>
+						<tr>
+							<td class="label">email</td><td>lorem ipsu@uk-mx-htc.com</td>
+						</tr>
+						<tr>
+							<td class="label">phone</td><td>52-1234 972030</td>
+						</tr>
+						<tr>
+							<td class="label">map</td><td>link.to.map</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div class="caja">
 				<span class="subtitulo">Recent Articles</span>
+				<div class="caja-content">
+					<ul class="articles">
+						<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
+						<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
