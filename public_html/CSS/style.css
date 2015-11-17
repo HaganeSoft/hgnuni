@@ -1,6 +1,6 @@
 body {
-	font-family: 'Arial';
-	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 	width: 100%;
 }
 
@@ -33,6 +33,8 @@ body {
 
 .nav .subtitulonav {
 	display: inline-block;
+	color: #7b060e;
+	font-size: 17px;
 }
 
 .nav ul {
@@ -71,9 +73,14 @@ body {
 	float: right;
 }
 
+.footer {
+	width: 100%;
+}
+
 .footer.up {
 	background-color: #231F20;
 	height: 130px;
+	font-family: 'Roboto Slab', serif;
 }
 
 .footer.down {
@@ -83,40 +90,48 @@ body {
 	line-height: 40px;
 }
 
-.footer {
-	width: 100%;
-}
-
-.footer ul {
-	display: inline-block;
-}
-
-.footer ul li {
-	display: inline-block;
-}
-
-.footer ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
-}
-
-.footer ul li a:hover {
-	color: #000;
-	background-color: #fff;
-}
-
 .footer .caja {
 	width: 240px;
 	float: left;
-	padding: 10px 5px;
+	padding: 14px 5px;
 	height: inherit;
 	box-sizing: border-box;
 }
 
 .footer .caja .subtitulo{
 	color: #C71D29;
-	font-size: 23px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+
+.caja-content {
+	margin-top: 20px;
+}
+
+.footer.up ul {
+	color: #fff;
+	list-style: initial;
+}
+
+.footer.up ul li {
+	padding: 3px;
+	font-weight: 100;
+}
+
+.footer.down ul {
+	display: inline-block;
+}
+
+.footer.down ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.footer.down ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
 }
 
 .copyright {
@@ -124,26 +139,24 @@ body {
 	float: right;
 	line-height: normal;
 	vertical-align: middle;
+	padding: 10px 0;
 }
 
 .copyright .copy{
 	color: #fff;
 	clear: both;
 	font-size: 10px;
-	padding: 0;
+	padding: 1px 0;
 	display: block;
 }
 
 .copyright .design{
-	font-size: 8px;
+	font-size: 6px;
+	text-align: center;
 	color: #000;
 	clear: both;
-	padding: 0;
+	padding: 1px 0;
 	display: block;
-}
-
-slick {
-	height: 800px;
 }
 
 table {
