@@ -77,7 +77,7 @@ body {
 	display: inline-block;
 	float: right;
 	color: #5d5d5d;
-	padding-top: 40px;
+	padding-top: 35px;
 }
 
 .header .follow-us .social {
@@ -250,7 +250,7 @@ th {
 
 .container {
 	color: #5d5d5d;
-	font-size: 20px;		
+	font-size: 20px;
 }
 
 .row {
@@ -268,14 +268,19 @@ th {
 	width: 20%;
 }
 
-.row .col-30 {
+.row .col-25 {
 	float: left;
-	width: 30%;
+	width: 25%;
 }
 
 .row .col-30 {
 	float: left;
 	width: 30%;
+}
+
+.row .col-33 {
+	float: left;
+	width: 33%;
 }
 
 .row .col-40 {
@@ -293,9 +298,19 @@ th {
 	width: 60%;
 }
 
+.row .col-66 {
+	float: left;
+	width: 60%;
+}
+
 .row .col-70 {
 	float: left;
 	width: 70%;
+}
+
+.row .col-70 {
+	float: left;
+	width: 75%;
 }
 
 .row .col-80 {
@@ -311,4 +326,69 @@ th {
 .row .col-100 {
 	float: left;
 	width: 100%;
+}
+
+.row .off-10 {
+	content: "";
+	margin-left: 10%;
+}
+
+.row .off-20 {
+	content: "";
+	margin-left: 20%;
+}
+
+.row .off-25 {
+	content: "";
+	margin-left: 25%;
+}
+
+.row .off-30 {
+	content: "";
+	margin-left: 30%;
+}
+
+.row .off-33 {
+	content: "";
+	margin-left: 33%;
+}
+
+.row .off-40 {
+	content: "";
+	margin-left: 40%;
+}
+
+.row .off-50 {
+	content: "";
+	margin-left: 50%;
+}
+
+.row .off-60 {
+	content: "";
+	margin-left: 60%;
+}
+
+.row .off-66 {
+	content: "";
+	margin-left: 66%;
+}
+
+.row .off-70 {
+	content: "";
+	margin-left: 70%;
+}
+
+.row .off-75 {
+	content: "";
+	margin-left: 75%;
+}
+
+.row .off-80 {
+	content: "";
+	margin-left: 80%;
+}
+
+.row .off-90 {
+	content: "";
+	margin-left: 90%;
 }
