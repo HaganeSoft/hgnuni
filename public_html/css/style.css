@@ -18,16 +18,30 @@ th {
 	padding: 5px;
 }
 
-.header {
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	border-bottom: 2px solid;
-	margin-left: 40px;
-}
-
 .main-view {
 	color: #5d5d5d;
 	font-size: 1.4em;
+}
+
+.card {
+	margin: 20px 0;
+	border: 1px solid;
+	border-color: #FAFAFA;
+	border-radius: 5px;
+}
+
+.card-head {
+	padding: 5px;
+	border-bottom: 1px solid;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+	background-color: #C71D29;
+	color: #fff;
+}
+
+.card-body {
+	padding: 5px;
 }
 
 /*DOCUMENT*/
@@ -39,13 +53,6 @@ body {
 }
 
 /*HEAD AND NAV*/
-.header{
-}
-
-.relative {
-	position: relative;
-}
-
 .content {
 	width: 80%;
 	margin: 0 auto;
@@ -56,10 +63,18 @@ body {
 	margin: 0 auto;
 }
 
+.header {
+	height: 170px;
+}
+
 .header li {
 	display: inline-block;
 	list-style: none;
 	vertical-align: middle;
+}
+
+.header img {
+	height: 150px;
 }
 
 .nav {
