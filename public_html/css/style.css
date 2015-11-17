@@ -27,6 +27,7 @@ th {
 
 .main-view {
 	color: #5d5d5d;
+	font-size: 14px;
 }
 
 /*DOCUMENT*/
@@ -271,11 +272,6 @@ th {
 	margin-left: 40px;
 }
 
-.main-view {
-	color: #5d5d5d;
-	font-size: 18px;
-}
-
 /*GRID*/
 
 .container {
@@ -298,6 +294,11 @@ th {
 
 [class*='col-'] {
 	float: left;
+}
+
+[class*='col-'] img {
+	width: 85%;
+	padding: 0 auto;
 }
 
 .row .col-10 {
@@ -421,5 +422,5 @@ th {
 }
 
 .row p {
-	line-height: 35px;
+	line-height: 25px;
 }
