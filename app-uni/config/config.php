@@ -21,7 +21,7 @@ class Config {
 				'db_user' => 'root',
 				'db_password' => 'Guapuras95!',
 				'session_time' => 3600,
-				'document_root' => '/hagane/hgnuni/'
+				'document_root' => '/hgnuni/public_html/'
 			);
 	}
 
