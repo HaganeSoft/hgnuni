@@ -1,8 +1,73 @@
+/* DEFAULT INITIALIZATION OF HEADERS */
+h1 { 
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}	
+
+h3 { 
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 { 
+  display: block;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 { 
+  display: block;
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}	
+
+h6 { 
+  display: block;
+  font-size: .67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/* COLORS TEXT */
+.blue-text {
+	color: #0000B2;
+}
+
 /*CONTENT*/
 slick {
 	width: 60%;
 	height: auto;
-	margin: 40px auto 80px !important;
+	margin: 0 auto 80px !important;
 }
 
 table {
@@ -27,7 +92,7 @@ th {
 
 .main-view {
 	color: #5d5d5d;
-	font-size: 14px;
+	font-size: 1.4em;
 }
 
 /*DOCUMENT*/
@@ -52,7 +117,7 @@ body {
 }
 
 .main-view {
-	width: 85%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -69,6 +134,7 @@ body {
 	background-color: #C71D29;
 	color: #000;
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 .nav .subtitulonav {
@@ -296,7 +362,7 @@ th {
 	float: left;
 }
 
-[class*='col-'] img {
+[class*='col-'] img.fill {
 	width: 85%;
 	padding: 0 auto;
 }
