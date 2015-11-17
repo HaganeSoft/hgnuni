@@ -27,7 +27,7 @@ th {
 
 .main-view {
 	color: #5d5d5d;
-	font-size: 14px;
+	font-size: 1.4em;
 }
 
 /*DOCUMENT*/
@@ -422,5 +422,5 @@ th {
 }
 
 .row p {
-	line-height: 25px;
+	line-height: 1.7em;
 }
