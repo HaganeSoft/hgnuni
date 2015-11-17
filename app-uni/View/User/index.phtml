@@ -1,10 +1,16 @@
 <?php if ($this->auth->isAuth()) : ?>
 	<a  href="User/logout">Logout</a>
-ya etsas logueado tututruur   shhhoohh
+ya etsas logueado tututruur shhhoohh
 <?php else: ?>
-<form action="User/auth" method="post">
-	<input name="user" type="text" placeholder="User" ng-required="true">
-	<input name="password" type="password" placeholder="Password" ng-required="true">
-	<button type="submit">Entrar</button>
-</form>
+<div class="container">
+	<div class="row">
+		<div class="col-50 off-25" style="margin: 0 auto;">
+			<form action="User/auth" method="post">
+				<input name="user" type="text" placeholder="User" ng-required="true">
+				<input name="password" type="password" placeholder="Password" ng-required="true">
+				<button type="submit">Entrar</button>
+			</form>
+		</div>
+	</div>
+</div>
 <?php endif; ?>
