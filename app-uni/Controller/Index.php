@@ -12,6 +12,9 @@ class Index extends AbstractController{
 	function contacto() {
 	}
 
+	function downloads() {
+	}
+
 	function conocenos() {
 
 		//print_r($result);

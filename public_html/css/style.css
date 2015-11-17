@@ -63,6 +63,10 @@ h6 {
 	color: #0000B2;
 }
 
+.red-text {
+	color: #DE0514;
+}
+
 /*CONTENT*/
 slick {
 	width: 60%;
@@ -338,6 +342,18 @@ th {
 	margin-left: 40px;
 }
 
+.row p {
+	line-height: 25px;
+}
+
+.sub-nav {
+	width: 100%;
+	border-bottom: 2px solid #5d5d5d;
+	margin-bottom: 10px;
+	height: 2em;
+	line-height: 2em;
+}
+
 /*GRID*/
 
 .container {
@@ -348,6 +364,22 @@ th {
 	width: 100%;
 	display: inline-block;
 	margin-bottom: 50px;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.row.no-margin-bot {
+	margin-bottom: 0;
+}
+
+.row.half-margin-bot {
+	margin-bottom: 25px;
 }
 
 /*-- our cleafix hack -- */
@@ -487,6 +519,24 @@ th {
 	margin-left: 90%;
 }
 
-.row p {
-	line-height: 25px;
+/* CUSTOM ELEMENTS */
+.square-but {
+	padding: 0.15em 1.5em;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #0000B2;
+}
+
+.square-but.active {
+	background-color: #0000B2;
+	color: #FFF;
+}
+
+.dates-list {
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+.dates-list ul {
+	color: #BEBCBC;
 }
