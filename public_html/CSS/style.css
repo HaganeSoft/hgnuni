@@ -1,3 +1,36 @@
+/*CONTENT*/
+slick {
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+}
+
+table {
+	max-width: 960px;
+	width: 100%;
+}
+
+th {
+	text-align: left;
+	color: #C71C28;
+	border-bottom: 3px solid gray;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.header {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid;
+	margin-left: 40px;
+}
+
+.main-view {
+	color: #5d5d5d;
+	/*font-size: 20px;*/
+}
+
+/*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
@@ -5,6 +38,7 @@ body {
 	min-width: 920px;
 }
 
+/*HEAD AND NAV*/
 .header{
 }
 
@@ -94,12 +128,8 @@ body {
 	padding-left: 5px;
 }
 
-slick {
-	width: 60%;
-	height: auto;
-	margin: 40px auto 80px !important;
-}
 
+/*FOOTER AND COPYRIGHT*/
 .footer {
 	width: 100%;
 }
@@ -123,6 +153,7 @@ slick {
 	padding: 14px 5px;
 	height: inherit;
 	box-sizing: border-box;
+	display: inline-block;
 }
 
 .footer .caja .subtitulo{
@@ -196,11 +227,6 @@ slick {
 	font-size: 12px;
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
 .copyright {
 	display: inline-block;
 	float: right;
@@ -250,7 +276,10 @@ th {
 .main-view {
 	color: #5d5d5d;
 	font-size: 20px;
-}
+
+/*GRID*/
+.container {
+	width: 100%
 
 .row {
 	width: 100%;
@@ -275,7 +304,7 @@ th {
 	width: 25%;
 }
 
-.row .col-30 {	
+.row .col-30 {
 	width: 30%;
 }
 
