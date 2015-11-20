@@ -166,6 +166,11 @@ th {
 
 }
 
+.input-login {
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+
 .date-bar h1 {
   font-family: 'Roboto', sans-serif;
 	border-bottom: 2px solid #5d5d5d;
