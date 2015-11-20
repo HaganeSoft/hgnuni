@@ -1,0 +1,62 @@
+<?php if ($this->auth->isAuth()) : ?>
+	<a  href="User/logout">Logout</a>
+ya etsas logueado tututruur shhhoohh
+<?php else: ?>
+<div class="container">
+	<div class="row">
+		<div class="col-50 off-25">
+			<div class="card">
+				<div class="card-head">
+					<h2>Sign up</h2>
+				</div>
+				<div class="card-body">
+					<form action="User/auth" method="post" novalidate>
+						<div class="row">
+							<div class="col-50">
+								<input name="name" type="text" placeholder="name" ng-required="true">
+							</div>
+							
+							<div class="col-50">
+								<input name="country" type="text" placeholder="country" ng-required="true">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-50">
+								<input name="email" type="email" placeholder="email" ng-required="true">
+							</div>
+							
+							<div class="col-50">
+								<input name="email_confirm" type="email" placeholder="email" ng-required="true">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-50">
+								<input name="address" type="text" placeholder="address" ng-required="true">
+							</div>
+							
+							<div class="col-50">
+								<input name="university" type="text" placeholder="university" ng-required="true">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-50">
+								<input name="phone" type="text" placeholder="phone" ng-required="true">
+							</div>
+							
+							<div class="col-50">
+								<input name="degree" type="password" placeholder="degree" ng-required="true">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<button type="submit">send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php endif; ?>

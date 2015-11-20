@@ -95,25 +95,63 @@ th {
 
 .card {
 	margin: 1.1em;
-	border: 1px solid;
 	border-color: #FAFAFA;
 	border-radius: 0.3em;
+	box-shadow: 5px 5px 15px #999;
 }
 
 .card-head {
-	padding: 0.3em;
+	padding: 0.5em 0 0.5em 0.7em;
 	border-bottom: 1px solid;
 	border-top-left-radius: 0.3em;
 	border-top-right-radius: 0.3em;
-	text-align: center;
 	background-color: #C71D29;
 	color: #fff;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
 }
 
 .card-body {
-	padding: 0.3em;
+	padding: 0.8em 0.4em;
+	background-color: #EDEDED;
 }
 
+.card-body input {
+	height: 40px;
+	text-align: left;
+	padding: 0 0 0 15px;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.card button {
+	background-color: #C71D29;
+	color: #FFF;
+	border: 2px solid #FFF;
+	padding: 5px 25px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+.card .row {
+	margin-bottom: 10px;
+}
+
+.card-footer {
+	padding: 0.3em;
+	border-bottom-right-radius: 0.3em;
+	border-bottom-left-radius: 0.3em;
+	background-color: #C71D29;
+	color: #fff;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
 /*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
@@ -402,7 +440,9 @@ th {
 }
 
 [class*='col-'] {
+	box-sizing: border-box;
 	float: left;
+	padding: 0 0.5em;
 }
 
 [class*='col-'] * {
@@ -415,7 +455,6 @@ th {
 }
 
 .row .col-10 {
-	padding: 0 0.7em;
 	width: 10%;
 }
 

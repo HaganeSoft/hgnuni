@@ -1,14 +1,32 @@
 <?php if ($this->auth->isAuth()) : ?>
-<br>**Se redirigira a su panel
+	<a  href="User/logout">Logout</a>
+ya etsas logueado tututruur shhhoohh
 <?php else: ?>
- <div class="row white">
-  <div class="col s12 offset-m3 m6">
-  	Usuario y/o Contraseña inválidos<br>
-    <form action="User/auth" method="post">
-      <input name="user" type="text" placeholder="User">
-      <input name="password" type="password" placeholder="Password">
-      <button class="btn waves-effect waves-teal orange" type="submit">Login</button>
-    </form>
-  </div>
+<div class="container">
+	<div class="row">
+		<div class="col-50 off-25">
+			<div class="card">
+				<div class="card-head">
+					<h2>Login</h2>
+				</div>
+				<div class="card-body">
+					<form action="User/auth" method="post" novalidate>
+						<div class="row">
+							<div class="col-50">
+								<input name="name" type="text" placeholder="name" ng-required="true">
+							</div>
+							
+							<div class="col-50">
+								<input name="country" type="text" placeholder="country" ng-required="true">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<button type="submit">send</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <?php endif; ?>
