@@ -20,14 +20,14 @@
 		<div class="col-70 off-10">
 			<div class="row" ng-repeat="downloadable in downloadables">
 				<div class="col-30">
-					<img class="fill" ng-src="{{downloadable.img}}" alt="Imagen"/>
+					<img class="fill" ng-src="{{downloadable.image}}" alt="Imagen"/>
 				</div>
 				<div class="col-60">
 					<h5 style="margin: 5px 0; color: #BEBCBC">{{downloadable.area}}</h5>
 					<h3 style="margin: 5px 0">{{downloadable.title}}</h3>
-					<p class="red-text">{{downloadable.author}} <a class="download" href="{{downloadable.href}}">download</a></p>
-					<p class="date">{{downloadable.date | date : short}}<p>
-					{{downloadable.descrption}}
+					<p class="red-text">{{downloadable.author}} <a class="download" href="{{downloadable.link}}">download</a></p>
+					<p class="date">{{downloadable.datePublished | date : short}}<p>
+					{{downloadable.description}}
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@
 				<ul class="pull-right dates-list">
 					<li ng-repeat="year in dates.years"><a ng-click="activeYear = $index">{{year}}</a>
 						<ul class="months" ng-show="{{activeYear == $index}}">
-							<li ng-repeat="month in dates.months[$index]">{{month}}</li>
+							<li ng-repeat="month in dates.months[$index]"><a ng-click="filterByDate($index, $parent.$index)">{{monthNames[month]}}</a></li>
 						</ul>
 					</li>
 				</ul>
