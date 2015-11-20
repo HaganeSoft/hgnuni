@@ -6,14 +6,17 @@ ya etsas logueado tututruur shhhoohh
 	<div class="row">
 		<div class="card col-33 off-33">
 			<div class="card-head">
-				Login
+				<h2>Login</h2>
 			</div>
 			<div class="card-body">
 				<form action="User/auth<?= isset($_GET['dest']) ? '?dest=' . $_GET['dest'] : '' ?>" method="post" novalidate>
-					<input name="user" type="text" placeholder="User" ng-required="true">
-					<input name="password" type="password" placeholder="Password" ng-required="true">
+					<input class="input-login" name="user" type="text" placeholder="User" ng-required="true">
+					<input class="input-login" name="password" type="password" placeholder="Password" ng-required="true">
 					<button type="submit">Entrar</button>
 				</form>
+			</div>
+			<div class="card-footer">
+				<button type="submit">Entrar</button>
 			</div>
 		</div>
 	</div>
