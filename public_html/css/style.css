@@ -1,7 +1,7 @@
 /* DEFAULT INITIALIZATION OF HEADERS */
 h1 {
   display: block;
-  font-size: 1.7em;
+  font-size: 2em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
@@ -72,6 +72,14 @@ slick {
 	width: 60%;
 	height: auto;
 	margin: 0 auto 80px !important;
+}
+
+.slick-slide {
+   width:100%;
+}
+
+.slick-slide img {
+   width:100%;
 }
 
 table {
@@ -152,6 +160,26 @@ th {
 	align-items: center;
 	justify-content: flex-end;
 }
+
+.date-bar {
+
+}
+
+.date-bar h1 {
+  font-family: 'Roboto', sans-serif;
+	border-bottom: 2px solid #5d5d5d;
+  width: 100%;
+	line-height: 1.6em;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.dates-list .months li {
+    font-size: 0.8em;
+    text-align: right;
+}
+
 /*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
@@ -200,6 +228,7 @@ body {
 	color: #7b060e;
 	font-size: 1.1em;
 	padding-right: 0.7em;
+  text-decoration: none;
 }
 
 .nav ul {
@@ -262,6 +291,7 @@ body {
 	background-color: #231F20;
 	color: #5d5d5d;
 	font-family: 'Roboto Slab', serif;
+  font-size: 0.8em;
 }
 
 .footer.down {
@@ -276,13 +306,18 @@ body {
 	height: inherit;
 	box-sizing: border-box;
 	display: inline-block;
+  vertical-align: top;
 }
 
 .footer .caja .subtitulo{
-	color: #7b060e;
-	font-size: 1.1em;
+  display: block;
+	color: #C71D29;
+	font-size: 1.4em;
 	font-weight: bold;
 	font-family: 'Roboto Slab', serif;
+  border-bottom: solid 1px #5d5d5d;
+  padding-bottom: 0.4em;
+  width: 70%;
 }
 
 .caja-content {
@@ -290,12 +325,21 @@ body {
 }
 
 .footer.up ul {
-	list-style: initial;
+	list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer.up ul li {
 	padding: 0.1em;
 	font-weight: 300;
+}
+
+.footer.up ul li:before {
+  content: "• ";
+  color: #7b060e;
+  letter-spacing: 0.3em;
 }
 
 .footer.up tr {
@@ -315,8 +359,8 @@ body {
 	list-style: none;
 }
 
-.footer.up ul.articles li {
-	list-style: none;
+.footer.up ul.articles li:before {
+	content: none;
 }
 
 .footer.up ul.articles img{
@@ -384,11 +428,12 @@ th {
 }
 
 .title {
-	font-size: 2em;
 	margin-bottom: 0.6em;
 	padding-bottom: 0.6em;
 	border-bottom: 2px solid;
 	margin-left: 1.2em;
+  width: inherit;
+  text-align: center;
 }
 
 .row p {
@@ -398,9 +443,14 @@ th {
 .sub-nav {
 	width: 100%;
 	border-bottom: 2px solid #5d5d5d;
-	margin-bottom: 10px;
+	margin-bottom: 0.8em;
 	height: 2em;
 	line-height: 2em;
+}
+
+.sub-nav h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 /*GRID*/
@@ -599,21 +649,14 @@ th {
 	color: #BEBCBC;
 }
 
-/* Media queries */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
 	body {
 		font-size: 18px;
 	}
 }
 
-/*@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
 	body {
 		font-size: 14px;
-	}
-}*/
-
-@media screen and (max-width: 900px) {
-	.content {
-		width: 870px;
 	}
 }
