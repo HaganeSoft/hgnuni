@@ -74,6 +74,14 @@ slick {
 	margin: 0 auto 80px !important;
 }
 
+.slick-slide {
+   width:100%;
+}
+
+.slick-slide img {
+   width:100%;
+}
+
 table {
 	max-width: 960px;
 	width: 100%;
