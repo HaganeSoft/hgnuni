@@ -568,8 +568,7 @@ th {
 	color: #BEBCBC;
 }
 
-/* Media queries */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
 	body {
 		font-size: 18px;
 	}
@@ -580,9 +579,3 @@ th {
 		font-size: 14px;
 	}
 }*/
-
-@media screen and (max-width: 900px) {
-	.content {
-		width: 870px;
-	}
-}
