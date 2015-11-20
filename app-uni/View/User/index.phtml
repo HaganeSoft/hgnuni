@@ -9,9 +9,10 @@ ya etsas logueado tututruur shhhoohh
 				<h2>Login</h2>
 			</div>
 			<div class="card-body">
-				<form action="User/auth" method="post" novalidate>
+				<form action="User/auth<?= isset($_GET['dest']) ? '?dest=' . $_GET['dest'] : '' ?>" method="post" novalidate>
 					<input class="input-login" name="user" type="text" placeholder="User" ng-required="true">
 					<input class="input-login" name="password" type="password" placeholder="Password" ng-required="true">
+					<button type="submit">Entrar</button>
 				</form>
 			</div>
 			<div class="card-footer">

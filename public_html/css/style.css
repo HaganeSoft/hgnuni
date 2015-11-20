@@ -186,6 +186,14 @@ th {
     text-align: right;
 }
 
+.download {
+  padding-left: 5px;
+  font-size: 0.7em;
+  color: green;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
 /*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
@@ -657,6 +665,10 @@ th {
 
 .dates-list ul {
 	color: #BEBCBC;
+}
+
+a[ng-click] {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) {

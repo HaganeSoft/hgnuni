@@ -10,11 +10,13 @@ class User extends AbstractController{
 	}
 
 	function auth() {
+		$destination = isset($_GET['dest']) ? $_GET['dest'] : $this->config['document_root'] . "index";
+
 		if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			$this->auth->authenticate($_POST['user'], $_POST['password']);
 			if ($this->auth->isAuth()) {
 				$this->user = new \Hagane\Model\User($this->auth, $this->db);
-				header("Location:" . $this->config['document_root'] . "index");
+				header("Location:" . $destination);
 			}
 		}
 	}
