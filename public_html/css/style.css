@@ -1,7 +1,7 @@
 /* DEFAULT INITIALIZATION OF HEADERS */
 h1 {
   display: block;
-  font-size: 2em;
+  font-size: 1.7em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
   margin-left: 0;
@@ -89,6 +89,7 @@ th {
 
 .main-view {
 	color: #5d5d5d;
+	padding-top: 4em;
 	font-size: 1em;
 }
 
@@ -222,14 +223,12 @@ body {
 .footer.up {
 	background-color: #231F20;
 	color: #5d5d5d;
-	height: 9.3em;
 	font-family: 'Roboto Slab', serif;
 }
 
 .footer.down {
 	background-color: #164084;
 	text-align: left;
-	height: 2.9em;
 	line-height: 2.9em;
 }
 
@@ -406,6 +405,10 @@ th {
 	float: left;
 }
 
+[class*='col-'] * {
+	max-width: 100%;
+}
+
 [class*='col-'] img.fill {
 	width: 85%;
 	padding: 0 auto;
@@ -456,7 +459,7 @@ th {
 	width: 70%;
 }
 
-.row .col-70 {
+.row .col-75 {
 	width: 75%;
 }
 
