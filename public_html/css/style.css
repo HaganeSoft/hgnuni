@@ -1,7 +1,7 @@
 /* DEFAULT INITIALIZATION OF HEADERS */
 h1 {
   display: block;
-  font-size: 1.7em;
+  font-size: 2em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
@@ -122,6 +122,20 @@ th {
 	padding: 0.3em;
 }
 
+.date-bar {
+
+}
+
+.date-bar h1 {
+  font-family: 'Roboto', sans-serif;
+	border-bottom: 2px solid #5d5d5d;
+  width: 100%;
+	line-height: 1.6em;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 1em;
+}
+
 /*DOCUMENT*/
 body {
 	font-family: 'Roboto', sans-serif;
@@ -170,6 +184,7 @@ body {
 	color: #7b060e;
 	font-size: 1.1em;
 	padding-right: 0.7em;
+  text-decoration: none;
 }
 
 .nav ul {
@@ -369,7 +384,6 @@ th {
 }
 
 .title {
-	font-size: 2em;
 	margin-bottom: 0.6em;
 	padding-bottom: 0.6em;
 	border-bottom: 2px solid;
@@ -385,9 +399,14 @@ th {
 .sub-nav {
 	width: 100%;
 	border-bottom: 2px solid #5d5d5d;
-	margin-bottom: 10px;
+	margin-bottom: 0.8em;
 	height: 2em;
 	line-height: 2em;
+}
+
+.sub-nav h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 /*GRID*/

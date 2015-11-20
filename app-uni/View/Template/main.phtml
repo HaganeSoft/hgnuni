@@ -25,102 +25,105 @@
 	<script type="text/javascript" src="js/angular/mainController.js"></script>
 </head>
 <body>
-	<div class="header">
-		<div class="content">
-			<a href="#"><img src="img/menu/logo.svg"></a>
-			<div class="follow-us">
-				<span class="subtitle">Follow US</span>
-				<div class="social svg">
-					<a href="#" class="webicon googleplus">Google+</a>
-					<a href="#" class="webicon twitter">Twitter</a>
-					<a href="#" class="webicon youtube">YouTube</a>
-					<a href="#" class="webicon facebook">Facebook</a>
-					<a href="#" class="webicon linkedin">LinkedIn</a>
-				</div>
-				<div class="greeting">
-					<?php if ($this->auth->isAuth()) : ?>
-					<span class="welcome">welcome</span>
-					<span class="user"><?= $this->user->getUsername(); ?></span>
-					<a href="logout" style="font-size: 8px">(logout)</a>
-					<?php else: ?>
-					<a href="login">login</a>
-				<?php endif; ?>
+	<div class="page-wrap">
+		<div class="header">
+			<div class="content">
+				<a href="#"><img src="img/menu/logo.svg"></a>
+				<div class="follow-us">
+					<span class="subtitle">Follow US</span>
+					<div class="social svg">
+						<a href="#" class="webicon googleplus">Google+</a>
+						<a href="#" class="webicon twitter">Twitter</a>
+						<a href="#" class="webicon youtube">YouTube</a>
+						<a href="#" class="webicon facebook">Facebook</a>
+						<a href="#" class="webicon linkedin">LinkedIn</a>
+					</div>
+					<div class="greeting">
+						<?php if ($this->auth->isAuth()) : ?>
+						<span class="welcome">welcome</span>
+						<span class="user"><?= $this->user->getUsername(); ?></span>
+						<a href="logout" style="font-size: 8px">(logout)</a>
+						<?php else: ?>
+						<a href="login">login</a>
+					<?php endif; ?>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="nav">
-		<div class="content">
-			<span class="subtitulonav">HEAT TREATMENT NETWORK</span>
-			<ul>
-				<li><a href="#">Signup</a></li>
-				<li><a href="Index/downloads">Downloads</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="Index/contacto">Contact</a></li>
-			</ul>
-			<input id="searchbar" type="search" placeholder="Search">
+		<div class="nav">
+			<div class="content">
+				<a href="./" class="subtitulonav">HEAT TREATMENT NETWORK</a>
+				<ul>
+					<li><a href="#">Signup</a></li>
+					<li><a href="Index/downloads">Downloads</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="Index/contacto">Contact</a></li>
+				</ul>
+				<input id="searchbar" type="search" placeholder="Search">
+			</div>
 		</div>
-	</div>
-	<div class="main-view">
-		<?= $this->view; ?>
-	</div>
-	<div class="footer up">
-		<div class="content">
-			<div class="caja">
-				<span class="subtitulo">Useful Resources</span>
-				<div class="caja-content">
+		<div class="main-view">
+			<?= $this->view; ?>
+		</div>
+		<div class="footers">
+			<div class="footer up">
+				<div class="content">
+					<div class="caja">
+						<span class="subtitulo">Useful Resources</span>
+						<div class="caja-content">
+							<ul>
+								<li>link no.1</li>
+								<li>link no.1</li>
+								<li>link no.1</li>
+								<li>link no.1</li>
+							</ul>
+						</div>
+					</div>
+					<div class="caja">
+						<span class="subtitulo">Contact</span>
+						<div class="caja-content">
+							<table>
+								<tr>
+									<td class="label">address</td><td>lorem ipsum st. MX</td>
+								</tr>
+								<tr>
+									<td class="label">email</td><td>lorem ipsu@uk-mx-htc.com</td>
+								</tr>
+								<tr>
+									<td class="label">phone</td><td>52-1234 972030</td>
+								</tr>
+								<tr>
+									<td class="label">map</td><td>link.to.map</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="caja">
+						<span class="subtitulo">Recent Articles</span>
+						<div class="caja-content">
+							<ul class="articles">
+								<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
+								<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer down">
+				<div class="content">
 					<ul>
-						<li>link no.1</li>
-						<li>link no.1</li>
-						<li>link no.1</li>
-						<li>link no.1</li>
+						<li><a href="#">Signup</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="Index/contacto">Contact</a></li>
 					</ul>
-				</div>
-			</div>
-			<div class="caja">
-				<span class="subtitulo">Contact</span>
-				<div class="caja-content">
-					<table>
-						<tr>
-							<td class="label">address</td><td>lorem ipsum st. MX</td>
-						</tr>
-						<tr>
-							<td class="label">email</td><td>lorem ipsu@uk-mx-htc.com</td>
-						</tr>
-						<tr>
-							<td class="label">phone</td><td>52-1234 972030</td>
-						</tr>
-						<tr>
-							<td class="label">map</td><td>link.to.map</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="caja">
-				<span class="subtitulo">Recent Articles</span>
-				<div class="caja-content">
-					<ul class="articles">
-						<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
-						<li><img src="#" alt="Art.IMG" /><p>Lorem ipsum dolor sit amet, consectetur</p></li>
-					</ul>
+					<div class="copyright">
+						<span class="copy">HTN Copyright 2015</span>
+						<span class="design">designed by BLACKMAMBA </span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer down">
-		<div class="content">
-			<ul>
-				<li><a href="#">Signup</a></li>
-				<li><a href="#">Downloads</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="Index/contacto">Contact</a></li>
-			</ul>
-			<div class="copyright">
-				<span class="copy">HTN Copyright 2015</span>
-				<span class="design">designed by BLACKMAMBA </span>
-			</div>
-		</div>
-	</div>
-
 </body>
 </html>
