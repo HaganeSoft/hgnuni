@@ -4,11 +4,6 @@ namespace Hagane\Controller;
 class Events extends AbstractController{
 	
 	function _init() {
-		if (!$this->auth->isAuth()) {
-			 header("Location:" . $this->config['document_root'] . "Events");
-			 die();
-		}
-		include_once($this->config['appPath'].'Model/EventssModel.php');
 		echo $this->db->database_log['error'];
 	}
 
