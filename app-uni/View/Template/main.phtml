@@ -42,9 +42,9 @@
 						<?php if ($this->auth->isAuth()) : ?>
 						<span class="welcome">welcome</span>
 						<span class="user"><?= $this->user->getUsername(); ?></span>
-						<a href="logout" style="font-size: 8px">(logout)</a>
+						<a href="logout" style="font-size: 8px">(Logout)</a>
 						<?php else: ?>
-						<a href="login">login</a>
+						<a href="login">Login</a>
 					<?php endif; ?>
 					</div>
 				</div>
@@ -54,9 +54,9 @@
 			<div class="content">
 				<a href="./" class="subtitulonav">HEAT TREATMENT NETWORK</a>
 				<ul>
-					<li><a href="#">Signup</a></li>
+					<li><a href="User/sign_up">Signup</a></li>
 					<li><a href="Downloads">Downloads</a></li>
-					<li><a href="#">Events</a></li>
+					<li><a href="Events">Events</a></li>
 					<li><a href="Index/contacto">Contact</a></li>
 				</ul>
 				<input id="searchbar" type="search" placeholder="Search">
@@ -112,9 +112,9 @@
 			<div class="footer down">
 				<div class="content">
 					<ul>
-						<li><a href="#">Signup</a></li>
-						<li><a href="#">Downloads</a></li>
-						<li><a href="#">Events</a></li>
+						<li><a href="User/sign_up">Signup</a></li>
+						<li><a href="Downloads">Downloads</a></li>
+						<li><a href="Events">Events</a></li>
 						<li><a href="Index/contacto">Contact</a></li>
 					</ul>
 					<div class="copyright">

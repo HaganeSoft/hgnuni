@@ -24,6 +24,9 @@ class User extends AbstractController{
 	function logout() {
 		$this->auth->logout();
 	}
+
+	function sign_up() {
+	}
 }
 
 ?>
