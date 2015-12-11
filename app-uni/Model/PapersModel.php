@@ -1,16 +1,18 @@
-<?php
+<?php 
 namespace Hagane\Model;
 
 /**
 * Papers
 */
-class Papers {
+class Papers{
 	private $db;
 
-	function __construct(&$auth, &$db) {
-		$data = array('id' => $id);
-		$userArray = $db->getRow('SELECT * from Papers where id = :id', $data);
-		$this->db = $db;
+	function __construct(&$db) {
+		if (!empty($id)) {
+			$data = array('id' => $id);
+			$userArray = $db->getRow('SELECT * from Papers where Papers.id = :id', $data);
+			$this->db = $db;
+		}
 	}
 
 	function getPapers() {
@@ -19,11 +21,11 @@ class Papers {
 	}
 
 	function setPapers($data = array()) {
-		$this->db->insert('INSERT INTO Papers
-			SET area=:area,
+		$this->db->insert('INSERT INTO Papers 
+			SET area=:area, 
 				title=:title,
-		 		description=:description,
-		 		datePublished=:datePublished,
+		 		description=:description, 
+		 		datePublished=:datePublished, 
 		 		author=:author,
 		 		image=:image,
 		 		link=:link,
@@ -31,11 +33,11 @@ class Papers {
 	}
 
 	function updatePapers($data = array()) {
-		$this->db->query('UPDATE Papers
-			SET area=:area,
-				title=:title,
-				description=:description,
-				datePublished=:datePublished,
+		$this->db->query('UPDATE Papers 
+			SET area=:area, 
+				title=:title, 
+				description=:description, 
+				datePublished=:datePublished, 
 				author=:author,
 				image=:image,
 				link=:link,

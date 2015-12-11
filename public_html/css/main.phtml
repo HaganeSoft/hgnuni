@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="haganeApp">
+<head>
+	<base href="<?= $this->config['document_root']; ?>">
+	<meta charset="utf-8">
+	<title>UANL</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-slick.min.js"></script>
+	<script type="text/javascript" src="js/angular/haganeApp.js"></script>
+	<script type="text/javascript" src="js/angular/mainController.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="row header">
+			<div class="row">
+				<div class="ten columns logo">
+					<a href="#"><img src="img/menu/logo.svg"></a>
+				</div>
+				<div class="two columns follow-us">
+					Follow us
+				</div>
+			</div>
+			<div class="row">
+				<div class="nav">
+					<span class="three columns subtitulonav">HEAT TREATMENT NET-</span>
+					<ul>
+						<li class="two columns"><a href="#">Signup</a></li>
+						<li class="two columns"><a href="#">Downloads</a></li>
+						<li class="two columns"><a href="#">Events</a></li>
+						<li class="two columns"><a href="#">Contact</a></li>
+						<li class="two columns"><input id="searchbar" type="search" placeholder="Search"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="content">
+				<slick dots=true>
+					<div><img src="img/contenido/imagen1.gif"></div>
+					<div><img src="img/contenido/imagen2.gif"></div>
+					<div><img src="img/contenido/imagen3.gif"></div>
+				</slick>
+			</div>
+		</div>
+		<footer class="footer-band">
+		<div class="row">
+			<div class="three columns">
+				<span class="footer-ur">Useful Resources</span>
+			</div>
+			<div class="three columns">
+				<span class="footer-contact">Contact</span>
+			</div>
+			<div class="three columns">
+				<span class="footer-map">imagen del mapa que lleva a un link de google maps</span>
+			</div>
+			<div class="three columns">
+				<span class="footer-recent">Recent Articles</span>
+			</div>
+		</div>
+		<div class="row footer-nav">
+				<div class=" one column"> <a href="#">Signup</a> </div>
+				<div class=" one column"> <a href="#">Downloads</a> </div>
+				<div class=" one column"> <a href="#">Events</a> </div>
+				<div class=" one column"> <a href="#">Contact</a> </div>
+				<div class=" seven columns"> 
+					<div class="row">
+					<div class="five columns" style="float: right; color: white; padding-left: 60px; padding-top: 10px;"> HTN Copyright </div>
+					<div class="five columns" style="float: right; clear: right; font-size: 10px; padding-left: 35px"> Designed by BLACKMAMBA </div>
+					</div> 
+				</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
