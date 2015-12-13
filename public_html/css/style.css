@@ -109,6 +109,8 @@ th {
 	color: #5d5d5d;
 	padding-top: 0pxF;
 	font-size: 1em;
+	width: 100vw;
+	margin: 0 auto;
 }
 
 .card {
@@ -215,11 +217,6 @@ body {
 /*HEAD AND NAV*/
 .content {
 	width: 85%;
-	margin: 0 auto;
-}
-
-.main-view {
-	width: 96%;
 	margin: 0 auto;
 }
 
@@ -538,6 +535,10 @@ th {
 	box-sizing: border-box;
 	float: left;
 	padding: 0 0.5em;
+}
+
+[class*='col-'].no-gutter {
+	padding: 0;
 }
 
 [class*='col-'] * {
