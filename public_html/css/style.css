@@ -297,6 +297,10 @@ body {
 	padding-top: 1em;
 }
 
+.header-card{
+	color:white;
+}
+
 .header .greeting {
 	padding-top: 7.7em;
 	float: right;
