@@ -5,7 +5,7 @@ class Users extends AbstractController{
 	
 	function _init() {
 		if (!$this->auth->isAuth()) {
-			 header("Location:" . $this->config['document_root'] . "Users");
+			 header("Location:" . $this->config['document_root'] . "index");
 			 die();
 		}
 		include_once($this->config['appPath'].'Model/UsersModel.php');
