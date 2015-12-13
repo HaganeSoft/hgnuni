@@ -4,7 +4,7 @@ namespace Hagane\Model;
 /**
 * Papers
 */
-class Papers{
+class Paper {
 	private $db;
 
 	function __construct(&$db) {

@@ -8,7 +8,7 @@
 				 header("Location:" . $this->config['document_root'] . "Papers");
 				 die();
 			}
-			include_once($this->config['appPath'].'Model/PapersModel.php');
+			include_once($this->config['appPath'].'Model/PaperModel.php');
 			echo $this->db->database_log['error'];
 		}
 

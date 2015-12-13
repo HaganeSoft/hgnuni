@@ -23,7 +23,7 @@
 		function setEvents($data = array()) {
 			$this->db->insert('INSERT INTO Events 
 				SET area=:area, 
-					eventDate=:eventDate,
+					event_date=:event_date,
 			 		venue=:venue, 
 			 		location=:location, 
 			 		image=:image,

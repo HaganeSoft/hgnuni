@@ -13,7 +13,7 @@ class Events extends AbstractController{
 	function ajaxSetEvents() {
 		$this->print_template = false;
 		$this->sendJson = true;
-		$this->eventsModel = new \Hagane\Model\EventsModel($this->auth, $this->db);
+		$this->eventsModel = new \Hagane\Model\EventModel($this->auth, $this->db);
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$data = array(

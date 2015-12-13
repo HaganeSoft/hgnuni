@@ -8,7 +8,7 @@ class Users extends AbstractController{
 			 header("Location:" . $this->config['document_root'] . "Users");
 			 die();
 		}
-		include_once($this->config['appPath'].'Model/UsersModel.php');
+		include_once($this->config['appPath'].'Model/UserModel.php');
 		echo $this->db->database_log['error'];
 	}
 
@@ -22,6 +22,9 @@ class Users extends AbstractController{
 		}
 	}
 
+	function sign_up() {
+	}
+
 	function logout() {
 		$this->auth->logout();
 	}
@@ -32,7 +35,7 @@ class Users extends AbstractController{
 	function ajaxSetUsers() {
 		$this->print_template = false;
 		$this->sendJson = true;
-		$this->usersModel = new \Hagane\Model\UsersModel($this->auth, $this->db);
+		$this->usersModel = new \Hagane\Model\UserModel($this->auth, $this->db);
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$data = array(
@@ -54,7 +57,7 @@ class Users extends AbstractController{
 
 		$this->sendJson = true;
 		$this->print_template = false;
-		$this->usersModel = new \Hagane\Model\UsersModel($this->auth, $this->db);
+		$this->usersModel = new \Hagane\Model\UserModel($this->auth, $this->db);
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$data = array(
