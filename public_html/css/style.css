@@ -88,6 +88,10 @@ slick {
    width:100%;
 }
 
+.slick-dots{
+	visibility: inherit;
+}
+
 table {
 	max-width: 960px;
 	width: 100%;
@@ -215,7 +219,7 @@ body {
 }
 
 .main-view {
-	width: 100%;
+	width: 96%;
 	margin: 0 auto;
 }
 
