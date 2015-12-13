@@ -28,16 +28,8 @@
 	<div class="page-wrap">
 		<div class="header">
 			<div class="content">
-				<a href="#"><img src="img/menu/logo.svg"></a>
-				<div class="follow-us">
-					<span class="subtitle">Follow US</span>
-					<div class="social svg">
-						<a href="#" class="webicon googleplus">Google+</a>
-						<a href="#" class="webicon twitter">Twitter</a>
-						<a href="#" class="webicon youtube">YouTube</a>
-						<a href="#" class="webicon facebook">Facebook</a>
-						<a href="#" class="webicon linkedin">LinkedIn</a>
-					</div>
+				<div class="imagen-logo">
+					<a href="#"><img src="img/menu/logo.png"></a>
 					<div class="greeting">
 						<?php if ($this->auth->isAuth()) : ?>
 						<span class="welcome">welcome</span>
@@ -46,8 +38,32 @@
 						<?php else: ?>
 						<a href="login">Login</a>
 					<?php endif; ?>
+					
 					</div>
+					<div class="patrocinadores">
+						<a href="http://www.uanl.mx/"><img src="img/menu/uni.jpg"></a>
+						<a href="http://www.conacyt.mx/"><img src="img/menu/conacyt.jpg"></a>
+						<a href="http://newtonfoundation.publishpath.com/"><img src="img/menu/newtfund.jpg"></a>
+						<a href="https://www.britishcouncil.org.mx/"><img src="img/menu/brtcouncil.jpg"></a>
+						<a href="http://www.sheffield.ac.uk/"><img src="img/menu/tuos.jpg"></a>
+					</div>
+					
 				</div>
+				<!--
+				<div class="follow-us">
+					 CAMBIO 1 EN EL DISEñO AL DIA 10 DE DIC
+					<span class="subtitle">Follow US</span>
+					<div class="social svg">
+						<a href="#" class="webicon googleplus">Google+</a>
+						<a href="#" class="webicon twitter">Twitter</a>
+						<a href="#" class="webicon youtube">YouTube</a>
+						<a href="#" class="webicon facebook">Facebook</a>
+						<a href="#" class="webicon linkedin">LinkedIn</a>
+					</div>
+					-->
+					
+					
+					<!--</div> -->
 			</div>
 		</div>
 		<div class="nav">
@@ -125,5 +141,15 @@
 			</div>
 		</div>
 	</div>
+<script type="text/javascript">
+	$('.fade').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+	});
+	
+</script>
 </body>
 </html>

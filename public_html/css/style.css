@@ -280,18 +280,31 @@ body {
 	float: right;
 	color: #5d5d5d;
 	padding-top: 2.5em;
+	height: 60px;
 }
 
 .header .follow-us .social {
 	padding-top: 1em;
 }
 
-.header .follow-us .greeting {
-	padding-top: 2.5em;
+.header .greeting {
+	padding-top: 7.7em;
+	float: right;
 	font-family: 'Roboto Slab', serif;
 }
 
-.header .follow-us .user {
+.imagen-logo img{
+	display: inline-block;
+	float: left;
+}
+
+.imagen-logo .patrocinadores img{
+	height: 60px;
+	float: right;
+	padding-top: 2.7em;
+}
+
+.header .user {
 	color: #164084;
 	padding-left: 0.3em;
 }
