@@ -7,13 +7,13 @@
 		<div class="col-50 off-25">
 		
 		<link rel="stylesheet" type="text/css" href="css/modal.css" />
-		
+
 			<div class="card">
 				<div class="card-head">
-					<h2>Sign up</h2>
+					<h2 class="header-card">Sign up</h2>
 				</div>
-				<div class="card-body">
-					<form action="User/auth" method="post" novalidate>
+				<form action="User/ajaxSetUser" method="post" novalidate>
+					<div class="card-body">
 						<div class="row">
 							<div class="col-50">
 								<input name="name" type="text" placeholder="name" ng-required="true">
@@ -23,14 +23,14 @@
 								<input name="country" type="text" placeholder="country" ng-required="true">
 							</div>
 						</div>
-						
+							
 						<div class="row">
 							<div class="col-50">
 								<input name="email" type="email" placeholder="email" ng-required="true">
 							</div>
 							
 							<div class="col-50">
-								<input name="email_confirm" type="email confirmation" placeholder="email" ng-required="true">
+								<input name="email_confirm" type="email confirmation" placeholder="retype email" ng-required="true">
 							</div>
 						</div>
 
@@ -50,14 +50,14 @@
 							</div>
 							
 							<div class="col-50">
-								<input name="degree" type="password" placeholder="degree" ng-required="true">
+								<input name="degree" type="text" placeholder="degree" ng-required="true">
 							</div>
 						</div>
-					</form>
-				</div>
-				<div class="card-footer">
-					<button type="submit">send</button>
-				</div>
+					</div>
+					<div class="card-footer">
+						<button type="submit">send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
