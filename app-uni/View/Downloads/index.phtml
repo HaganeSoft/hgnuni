@@ -17,8 +17,8 @@
 </div>
 <div class="row" style="margin-top: 60px;" ng-controller="DownloadsCtlr">
 	<div class="col-60 off-10">
-		<form action="Downloads/download" method="get">
-			<div class="row" ng-repeat="download in downloadables">
+		<div class="row" ng-repeat="download in downloadables">
+			<form action="Downloads/download" method="get">
 				<div class="col-30">
 					<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
 				</div>
@@ -27,10 +27,11 @@
 					<h3 style="margin: 5px 0">{{download.area}}</h3>
 					<p class="red-text">{{download.author}}</p>
 					<p>{{download.description}}</p>
-					<button type="submit" value="{{download.filename}}">Download</button>
+					<input type="hidden" value="{{download.link}}" name="file">
+					<button type="submit">Download</button>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 	<div class="col-20">
 		<div class="date-bar">
