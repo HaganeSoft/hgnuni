@@ -6,10 +6,12 @@ class Downloads extends AbstractController{
 	function _init() {
 	}
 
-  function index() {
-  }
+	function index() {
+	}
 
   	function download(){
+  		$this->print_template = false;
+
 	  	if( $this->auth->isAuth() ){
 		  	$path_parts = pathinfo($_GET['file']);
 		  	$file_name  = $path_parts['basename'];

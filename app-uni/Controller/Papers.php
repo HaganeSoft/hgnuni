@@ -1,13 +1,13 @@
-<?php 
+<?php
 	namespace Hagane\Controller;
 
 	class Papers extends AbstractController{
-		
+
 		function _init() {
-			if (!$this->auth->isAuth()) {
-				 header("Location:" . $this->config['document_root'] . "Papers");
-				 die();
-			}
+			// if (!$this->auth->isAuth()) {
+			// 	header("Location:" . $this->config['document_root'] . "User");
+			// 	die();
+			// }
 			include_once($this->config['appPath'].'Model/PapersModel.php');
 			echo $this->db->database_log['error'];
 		}
@@ -18,7 +18,7 @@
 		function ajaxSetPapers() {
 			$this->print_template = false;
 			$this->sendJson = true;
-			$this->papersModel = new \Hagane\Model\PapersModel($this->auth, $this->db);
+			$this->papersModel = new \Hagane\Model\Papers($this->db);
 
 			if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				$data = array(
@@ -41,7 +41,7 @@
 
 			$this->sendJson = true;
 			$this->print_template = false;
-			$this->papersModel = new \Hagane\Model\PapersModel($this->auth, $this->db);
+			$this->papersModel = new \Hagane\Model\Papers($this->db);
 
 			if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				$data = array(
@@ -61,7 +61,7 @@
 		function ajaxGetPapers() {
 			$this->sendJson = true;
 			$this->print_template = false;
-			$this->papersModel = new \Hagane\Model\PapersModel($this->auth, $this->db);
+			$this->papersModel = new \Hagane\Model\Papers($this->db);
 			echo json_encode($this->papersModel->getPapers());
 		}
 	}
