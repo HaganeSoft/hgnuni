@@ -5,8 +5,6 @@ app.controller('MainController', function($scope) {
   $scope.downloadables = [];
   $scope.dateFilter;
 
-
-
   $http.get('Papers/ajaxGetPapers').then(function(response) {
     $scope.downloadables = response.data;
   }, function(error) {

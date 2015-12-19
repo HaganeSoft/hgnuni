@@ -15,38 +15,22 @@
 		</h1>
 	</div>
 </div>
-<div class="row" style="margin-top: 60px;">
+<div class="row" style="margin-top: 60px;" ng-controller="DownloadsCtlr">
 	<div class="col-60 off-10">
-		<div class="row">
-			<div class="col-30">
-				<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
+		<form action="Downloads/download" method="get">
+			<div class="row" ng-repeat="download in downloadables">
+				<div class="col-30">
+					<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
+				</div>
+				<div class="col-60">
+					<h5 style="margin: 5px 0; color: #BEBCBC">{{download.title}}</h5>
+					<h3 style="margin: 5px 0">{{download.area}}</h3>
+					<p class="red-text">{{download.author}}</p>
+					<p>{{download.description}}</p>
+					<button type="submit" value="{{download.filename}}">Download</button>
+				</div>
 			</div>
-			<div class="col-60">
-				<h5 style="margin: 5px 0; color: #BEBCBC">Sintering/Powder Metallurgy</h5>
-				<h3 style="margin: 5px 0">Debinding and Sintering of 316 Stainless Steel</h3>
-				<p class="red-text">Dr. Satyajit Banerjee Claus Joens</p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi eligendi, officiis veritatis excepturi aperiam error vitae fuga omnis praesentium. Totam vero sit at eligendi minus? Ea consectetur eum tenetur.
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-30">
-				<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
-			</div>
-			<div class="col-60">
-				<h5 style="margin: 5px 0; color: #BEBCBC">Sintering/Powder Metallurgy</h5>
-				<h3 style="margin: 5px 0">Debinding and Sintering of 316 Stainless Steel</h3>
-				<p class="red-text">Dr. Satyajit Banerjee Claus Joens</p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi eligendi, officiis veritatis excepturi aperiam error vitae fuga omnis praesentium. Totam vero sit at eligendi minus? Ea consectetur eum tenetur.
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-30">
-				<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
-			</div>
-			<div class="row">
-				<vertical-calendar-filter></vertical-calendar-filter>
-			</div>
-		</div>
+		</form>
 	</div>
 	<div class="col-20">
 		<div class="date-bar">
