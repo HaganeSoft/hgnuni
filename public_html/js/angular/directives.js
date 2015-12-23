@@ -1,7 +1,7 @@
 app.directive('veticalCalendarFilter', function {
   return {
     restrict: 'E',
-   template-url: '',
+   template-url: 'angular-templates/vetical-calendar-filter.html',
     scope: {
       ngModel: '=ngModel',
       dates: '=dates'
