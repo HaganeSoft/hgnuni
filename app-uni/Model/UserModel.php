@@ -25,6 +25,8 @@ class User {
 		return $this->userArray['user'];
 	}
 
+	function getPassword() {}
+
 	function setUser($data = array()) {
 		return $this->db->insert('INSERT INTO User 
 			SET name=:name, 
@@ -34,7 +36,7 @@ class User {
 		 		university=:university,
 		 		phone=:phone,
 		 		degree=:degree,
-		 		SELECT SUBSTRING(MD5(RAND()), 10) AS password ', $data);
+		 		password=:password ', $data);
 	}
 
 	function updateUser($data = array()) {

@@ -28,6 +28,16 @@ class User extends AbstractController{
 	function index() {
 	}
 
+	function generatePassword($length = 10) {
+	  $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+	  $count = mb_strlen($chars);
+    for ($i = 0, $result = ''; $i < $length; $i++) {
+      $index = rand(0, $count - 1);
+      $result .= mb_substr($chars, $index, 1);
+    }
+	  return $result;
+	}
+
 	function ajaxSetUser() {
 		$this->print_template = false;
 		$this->sendJson = true;
@@ -41,15 +51,16 @@ class User extends AbstractController{
 				'address' => $_POST['address'],
 				'university' => $_POST['university'],
 				'phone' => $_POST['phone'],
-				'degree' => $_POST['degree']);
+				'degree' => $_POST['degree'],
+				'password' => generatePassword() );
 			if( $this->userModel->setUser($data) != NULL ){
-				$to = $data('email');
+				$to = $data['email'];
 				$subject = 'HTN: Account password for Heat Treatmen Network';
 				$headers .= "CC: julio@hagane.software\r\n";
 				$headers .= "MIME-Version: 1.0\r\n";
 				$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 				$message = '<html><body>';
-				$message .= '<h1>Hello, World!</h1>';
+				$message .= '<h3>Your password is '.$data['password'].' </h3>';
 				$message .= '</body></html>';
 				mail($to, $subject, $message, $headers);
 				header("Location:" . $this->config['document_root'] . "index");
