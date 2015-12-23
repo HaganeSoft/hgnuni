@@ -1,65 +1,68 @@
-app.directive('veticalCalendarFilter', function {
+app.directive('hgVeticalCalendar', function {
   return {
     restrict: 'E',
-   template-url: 'angular-templates/vetical-calendar-filter.html',
+    template-url: 'angular-templates/hg-vetical-calendar.html',
     scope: {
-      ngModel: '=ngModel',
-      dates: '=dates'
+      ngModel: '=model',
+      hgTrigger: '=trigger',
+      hgFilter: 'filter'
     },
     controller: function($scope) {
 
-      $scope.dates = {};
       $scope.activeYear = 0;
       $scope.monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+      var selectedDate = {year: -1, month: -1};
+
+      $scope.dateSelected = function(year, month) {
+        selectedDate.year = year;
+        selectedDate.month = month;
+
+        trigger(year, month);
+      }
+
+      $scope.filter = function(value, index, array) {
+        if(selectedDate.year === -1) {
+          return true;
+        }
+
+        return value.date.getFullYear() === selectedDate.year && value.date.getMonth() === selectedDate.month;
+      }
+
       function calcDates() {
-        $scope.dates.years = [];
-        $scope.dates.months = [[]];
+        $scope.years = [];
+        $scope.months = [];
 
-        var yearsArray = $scope.dates.years;
-        var monthsArray = $scope.dates.months;
-
-        var yearExists;
         var yearIndex;
-        var monthExists;
-        var aYear;
-        var aMonth;
+        var monthIndex;
 
-        for (var d = 0; d < $scope.downloadables.length; d++) {
+        for (var d = 0; d < $scope.model.length; d++) {
 
-          //console.log($scope.downloadables[d]);
+          //Save the year index for later.
+          yearIndex = $scope.years.indexOf($scope.model[d].getFullYear());
 
-          //Make the date string a date object
-          $scope.downloadables[d].datePublished = new Date($scope.downloadables[d].datePublished);
-
-          //Get the downloadable's year
-          //Get it's month too
-          aYear = $scope.downloadables[d].datePublished.getFullYear();
-          aMonth = $scope.downloadables[d].datePublished.getMonth();
-
-          //Passing through years array
-          for (var y = 0; y < yearsArray.length; y++) {
-
-            //$scope.downloadables[d].datePublished = new Date($scope.downloadables[d].datePublished);
-
-            //Check if the downloadable's year is already in years array.
-            //Save the year index for later.
-            if(yearsArray[y] == aYear) {
-              yearIndex = y;
-              yearExists = true;
-            }
-          }
-
+          //Check if the next year is already in years array.
           //If not, add it.
           //Don't forget to save the index!
           //And we create a new index in the months array
-          if(!yearExists) {
-            yearsArray.push(aYear);
-            yearIndex = yearsArray.length - 1;
-            monthsArray.push([]);
+          if(yearIndex == -1) {
+            $scope.years.push($scope.model[d].getFullYear());
+            yearIndex = $scope.years.length - 1;
+            $scope.months.push([]);
+          }
+
+          //Save the month index for later
+          monthIndex = $scope.months[yearIndex].indexOf($scope.model[d].getMonth());
+
+          //Check if the next month is already in the months array corresponding to the year
+          //If not, add it!
+          if(monthIndex == -1) {
+            $scope.months[yearIndex].push($scope.model[d].getMonth());
           }
         }
       }
+
+      $scope.$watch('model', clacDates);
     }
   }
 });

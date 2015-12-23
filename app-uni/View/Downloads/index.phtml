@@ -17,7 +17,7 @@
 </div>
 <div class="row" style="margin-top: 60px;" ng-controller="DownloadsCtlr">
 	<div class="col-60 off-10">
-		<div class="row" ng-repeat="download in downloadables">
+		<div class="row" ng-repeat="download in downloadables | filter:dateFilter">
 			<form action="Downloads/download" method="get">
 				<div class="col-30">
 					<img class="fill" src="img/contenido/cuadro_rojo.png" alt="Imagen"/>
@@ -34,6 +34,6 @@
 		</div>
 	</div>
 	<div class="col-40">
-		<vertical-calendar-filter></vertical-calendar-filter>
+		<hg-vertical-calendar ng-model="dates" hg-filter="dateFilter"></hg-vertical-calendar>
 	</div>
 </div>

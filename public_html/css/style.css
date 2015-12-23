@@ -694,6 +694,21 @@ a[ng-click] {
   cursor: pointer;
 }
 
+/* Dyanmic calendar*/
+.dates-list {
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+.dates-list ul {
+	color: #BEBCBC;
+}
+
+.dates-list .months li {
+    font-size: 0.8em;
+    text-align: right;
+}
+
 @media screen and (min-width: 1440px) {
 	body {
 		font-size: 18px;

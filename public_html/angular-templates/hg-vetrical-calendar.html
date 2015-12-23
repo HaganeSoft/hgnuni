@@ -1,0 +1,7 @@
+<ul class="pull-right dates-list">
+  <li ng-repeat="year in years"><a ng-click="activeYear = $index">{{year}}</a>
+    <ul class="months" ng-show="{{activeYear == $index}}">
+      <li ng-repeat="month in months[$index]"><a ng-click="dateSelected($parent.$index, $index)">{{monthNames[month]}}</a></li>
+    </ul>
+  </li>
+</ul>
