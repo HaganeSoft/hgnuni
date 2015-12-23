@@ -19,6 +19,7 @@ abstract class AbstractController {
 
 	protected $print_template;
 	protected $sendJson;
+	protected $specifyHeader;
 
 	public function __construct($config = null){
 		$this->config = $config;
@@ -37,6 +38,7 @@ abstract class AbstractController {
 		$this->_init = '';
 		$this->_action = '';
 		$this->number = 0;
+		$this->specifyHeader = false;
 	}
 
 	public function executeAction($action){
@@ -76,9 +78,10 @@ abstract class AbstractController {
 		} else {
 			if ($this->sendJson) {
 				header("Content-type: application/json; charset=utf-8");
-			} else {
+			} else if (!$this->specifyHeader) {
 				header('Content-type: text/html; charset=utf-8');
 			}
+
 			$this->template = $this->view;
 			return $this->template;
 		}
