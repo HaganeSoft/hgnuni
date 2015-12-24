@@ -1,11 +1,10 @@
-app.directive('hgVeticalCalendar', function {
+app.directive('hgVerticalCalendar', function() {
   return {
     restrict: 'E',
-    template-url: 'angular-templates/hg-vetical-calendar.html',
+    templateUrl: 'angular-templates/hg-vertical-calendar.html',
     scope: {
-      ngModel: '=model',
-      hgTrigger: '=trigger',
-      hgFilter: 'filter'
+      model: '=ngModel',
+      trigger: '=hgTrigger'
     },
     controller: function($scope) {
 
@@ -13,21 +12,6 @@ app.directive('hgVeticalCalendar', function {
       $scope.monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
       var selectedDate = {year: -1, month: -1};
-
-      $scope.dateSelected = function(year, month) {
-        selectedDate.year = year;
-        selectedDate.month = month;
-
-        trigger(year, month);
-      }
-
-      $scope.filter = function(value, index, array) {
-        if(selectedDate.year === -1) {
-          return true;
-        }
-
-        return value.date.getFullYear() === selectedDate.year && value.date.getMonth() === selectedDate.month;
-      }
 
       function calcDates() {
         $scope.years = [];
@@ -62,7 +46,7 @@ app.directive('hgVeticalCalendar', function {
         }
       }
 
-      $scope.$watch('model', clacDates);
+      $scope.$watch('model', calcDates, true);
     }
   }
 });
