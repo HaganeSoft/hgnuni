@@ -17,8 +17,12 @@ class User extends AbstractController{
 			if ($this->auth->isAuth()) {
 				$this->user = new \Hagane\Model\User($this->auth, $this->db);
 				header("Location:" . $this->config['document_root'] . "index");
+			} else {
+				header("Location:" . $this->config['document_root'] . "login");
 			}
 		}
+
+		die();
 	}
 
 	function logout() {

@@ -9,6 +9,13 @@ class Downloads extends AbstractController{
 	function index() {
 	}
 
+	function members() {
+		if(!$this->auth->isAuth) {
+			header("Location:" . $this->config['document_root'] . "login");
+			die();
+		}
+	}
+
 	function download(){
 		$this->print_template = false;
 		$this->specifyHeader = true;

@@ -134,6 +134,10 @@ th {
 	justify-content: left;
 }
 
+.card-head h2 {
+  color: #fff;
+}
+
 .card-body {
 	padding: 0.8em 0.4em;
 	background-color: #EDEDED;

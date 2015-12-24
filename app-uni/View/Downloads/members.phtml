@@ -1,12 +1,16 @@
+<?php if (!$this->auth->isAuth()) : ?>
+	<a  href="User/logout">Logout</a>
+ya etsas logueado tututruur shhhoohh
+<?php else: ?>
 <div class="sub-nav">
 	<div class="row no-margin-bot">
 		<div class="pull-left off-10 center-items">
-			<a href="Downloads/index" class="square-but active">
+			<a href="Downloads/index" class="square-but">
 				Generals
 			</a>
 		</div>
 		<div class="pull-left center-items">
-			<a href="Downloads/members" class="square-but">
+			<a href="Downloads/members" class="square-but active">
 				Member access
 			</a>
 		</div>
@@ -40,3 +44,4 @@
 		<hg-vertical-calendar class="pull-right" ng-model="dates" hg-trigger="dateSelected"></hg-vertical-calendar>
 	</div>
 </div>
+<?php endif; ?>
