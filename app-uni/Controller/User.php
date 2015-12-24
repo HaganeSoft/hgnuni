@@ -52,18 +52,18 @@ class User extends AbstractController{
 				'university' => $_POST['university'],
 				'phone' => $_POST['phone'],
 				'degree' => $_POST['degree'],
-				'password' => generatePassword() );
+				'password' =>  $this->generatePassword() );
 			if( $this->userModel->setUser($data) != NULL ){
 				$to = $data['email'];
-				$subject = 'HTN: Account password for Heat Treatmen Network';
-				$headers .= "CC: julio@hagane.software\r\n";
+				$subject = "HTN: Account password for Heat Treatmen Network";
 				$headers .= "MIME-Version: 1.0\r\n";
 				$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-				$message = '<html><body>';
-				$message .= '<h3>Your password is '.$data['password'].' </h3>';
-				$message .= '</body></html>';
+				$message = "<html><body>";
+				$message .= "<h3>Your password is ".$data['password']." </h3>";
+				$message .= "</body></html>";
 				mail($to, $subject, $message, $headers);
 				header("Location:" . $this->config['document_root'] . "index");
+				echo '<script>$(document).ready(function(){ $(\'#modal_trigger_1\').trigger(\'click\');});</script>';
 			}
 		}
 		echo "error";
