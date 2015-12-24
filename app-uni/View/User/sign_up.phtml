@@ -52,12 +52,31 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<button ng-disabled="userForm.$invalid" type="submit">send</button>
+						<button id="modal_trigger_1" ng-disabled="userForm.$invalid" href="#modal_1" class="cardButton" type="submit">send</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- Modal para cuando se registran nuevos usuarios -->
+<div id="modal_1" align="center">
+	<div class="row">
+		<h2 class="col-100">Thank you for signing up!</h2>
+		<p class="col-100">We will send you an email with your password soon.</p>
+		<br>
+		<div class="row">
+			<img width="60px" height="60px" src="img/menu/logo.png">
+		</div>
+		<a href="Index/index" class="cardButton col-30 pull-right">Ok</a>
+	</div>
+</div>
+<script>
+  $("#modal_trigger_1").lightModal({
+    overlayDisable: true
+	});
+</script>
+
 
 <?php endif; ?>

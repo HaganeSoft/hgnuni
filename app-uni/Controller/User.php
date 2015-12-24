@@ -62,11 +62,11 @@ class User extends AbstractController{
 				$message .= "<h3>Your password is ".$data['password']." </h3>";
 				$message .= "</body></html>";
 				mail($to, $subject, $message, $headers);
-				header("Location:" . $this->config['document_root'] . "index");
-				echo '<script>$(document).ready(function(){ $(\'#modal_trigger_1\').trigger(\'click\');});</script>';
 			}
 		}
-		echo "error";
+		else {
+			echo "error";
+		}
 	}
 
 	function ajaxUpdateUser() {
