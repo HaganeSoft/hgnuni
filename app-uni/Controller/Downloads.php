@@ -25,7 +25,16 @@ class Downloads extends AbstractController{
 		    header('Pragma: public');
 		    header('Content-Length: ' . filesize($file_path));
 			//header("Content-Disposition: attachment; filename=$file_name");
-			readfile($file_path);
+
+			set_time_limit(0);
+			$file = @fopen($file_path,"rb");
+			while(!feof($file))
+			{
+				print(@fread($file, 1024*8));
+				ob_flush();
+				flush();
+			}
+			exit();
 		} else {
 			die("None shall pass");
 		}
